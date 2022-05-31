@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Kindred Salway</title>
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="#home" id="navbar__logo" onclick="toggleMobileMenu(this)">KS</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#home" class="navbar__links">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__links">About Me</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#projects" class="navbar__links">Projects</a>
+          </li>
+          <li class="navbar__btn">
+            <a href="#contact" class="button" id="signup">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </head>
+  <body>
+    <div class="hero" id="home">
+        <div class="hero__container" id="hero__cont">
+          <span class="box">
+            <h1>Kindred Salway</h1>
+            <h2 class="hero__description" id="description">
+              Designer and Web Developer
+            </h2>
+          </span>
+
+          <div class="links__container" id="links">
+            <a href="https://github.com/KindredSM" target="blank">
+              <img
+                src="Images/GitHub-Mark-Light-120px-plus.png"
+                class="github"
+              /> 
+            </a>
+            <a href="mailto:kdsm@protonmail.com">
+              <img
+                src="Images/1200px-Aiga_mail_white.svg.png"
+                class="email"
+                href="mailto:kdsm@protonmail.com"
+              /> 
+            </a>
+            <a href="Images/CV.pdf" target="blank">
+            <img src="Images/icons8-resume-96.png" class="cv" href="" /> </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="about">
+      <div class="bio__container">
+        <p class="bio__text" id="bio">
+          <span class="bio__header"><b>About Me</b></span> <br /><br />
+          Hey! I’m Kindred, a creative minded designer and front end developer
+          with a passion for building great user experiences.
+          <br />
+          <br />
+          Utilising Figma, HTML, CSS and JavaScript I spend my days conjouring
+          up new ideas and ways to provide value to customers and clients alike
+          with clean design and excellently simple code.
+
+          <br />
+          <br />
+          In the summer of 2022 I decided to finish my music production degree
+          to pursue a full time career in the tech world, and it has turned out
+          to be one of the best decisions that I have ever made!
+        </p>
+      </div>
+    </div>
+
+    <section id="projects">
+      <h3 class="p__header">Projects</h3>
+      <div class="projects__wrapper">
+        <a href="project1.html">
+          <img src="Images/Screenshot 2022-05-25 at 19.15.56.png" class="project1"></img>
+        </a>
+
+        <div class="project2"></div>
+        <div class="project3"></div>
+        <div class="project4"></div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <p class="email__footer">
+       Contact me! &#160;
+        <b
+          ><a href="mailto:kdsm@protonmail.com" class="email__address"
+            >KDSM@Protonmail.com</a
+          ></b
+        >
+      </p>
+    </section>
+  </body>
+  <script src="scripts.js"></script>
+</html>
