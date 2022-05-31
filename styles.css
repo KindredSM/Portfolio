@@ -38,12 +38,8 @@ body {
 }
 
 #navbar__logo {
-  background-color: rgb(255, 255, 255);
+  color: white;
   background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -126,7 +122,7 @@ h3 {
   vertical-align: middle;
   font-family: "Orbitron", sans-serif;
   font-size: 50px;
-  font-size: calc(min(7vw, 11vh));
+  font-size: calc(min(7vw, 10vh));
 }
 
 h1 {
@@ -254,6 +250,7 @@ h3 {
 }
 .p__header {
   padding-top: 80px;
+  font-size: 400%;
 }
 
 .projects__wrapper {
@@ -295,7 +292,6 @@ h3 {
 .project4 {
   width: 450px;
   height: 400px;
-  border: #0abdc6 2px solid;
   border-radius: 10px;
   background-color: rgb(47, 47, 47);
   transition: ease-in-out 0.3s;
@@ -310,17 +306,6 @@ h3 {
   opacity: 0.7;
   cursor: pointer;
   box-shadow: #0abdc6 5px 5px 12px;
-}
-
-.project1__header,
-.project2__header,
-.project3__header,
-.project4__header {
-  font-size: 20px;
-  padding-bottom: 30px;
-  background-color: rgb(12, 12, 12);
-  display: flex;
-  justify-content: center;
 }
 
 #contact {
