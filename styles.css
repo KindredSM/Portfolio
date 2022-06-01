@@ -136,6 +136,7 @@ h3 {
 }
 .links__container {
   padding-top: 50px;
+  padding-bottom: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -189,10 +190,10 @@ h3 {
   font-size: 34px;
 }
 .bio__container {
+  margin-top: 150px;
   display: flex;
   justify-content: center;
   text-align: justify;
-  margin-top: 350px;
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: #121212;
