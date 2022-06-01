@@ -150,15 +150,18 @@ h3 {
   border-radius: 50%;
 }
 
-.email:hover {
-  transform: scale(1.1);
+.linkedin:hover {
+  background-color: #0abdc6;
   transition: all 0.3s ease;
+  transform: scale(1.1);
 }
 
+.email:hover,
 .cv:hover {
   transform: scale(1.1);
   transition: all 0.3s ease;
 }
+
 .github {
   width: 50px;
   transition: all 0.3s ease;
@@ -178,11 +181,13 @@ h3 {
   cursor: pointer;
 }
 
-.github__text,
-.cv__text,
-.email__text {
+.linkedin {
+  border-radius: 50%;
   color: white;
-  text-decoration: none;
+  background-color: white;
+  width: 50px;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .bio__header {
