@@ -137,13 +137,9 @@ body {
   -webkit-text-stroke: 1px #0abdc6;
 }
 
-.annabel__img {
-  width: 80%;
-  border-radius: 10px;
-}
-
+.annabel__img,
 .annabel__img2 {
-  width: 80%;
+  width: 60%;
   border-radius: 10px;
 }
 
@@ -194,7 +190,7 @@ body {
   color: white;
   font-size: 20px;
   line-height: 150%;
-  width: 80%;
+  width: 60%;
 }
 
 .project__tech {
@@ -205,6 +201,30 @@ body {
 .fade {
   animation: fadeIn 2s;
   overflow: hidden;
+}
+
+.next__project {
+  font-size: 24px;
+  text-align: center;
+  padding: 10px 20px;
+  height: 100%;
+  width: 15%;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  background-color: #0abdc6;
+  outline: none;
+  border-radius: 30px;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s ease;
+  font-family: "PT Sans", sans-serif;
+  margin: 50px 0px 100px 0px;
+}
+
+.next__project:hover {
+  transform: scale(1.1);
+  color: black;
+  transition: all 0.3s ease;
 }
 
 @keyframes fadeIn {
@@ -314,5 +334,21 @@ body {
 
   #mobile-menu.is-active .bar:nth-child(2) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .annabel__img,
+  .annabel__img2 {
+    width: 80%;
+  }
+
+  .project__description {
+    color: white;
+    font-size: 20px;
+    line-height: 150%;
+    width: 80%;
+  }
+
+  .next__project {
+    width: 45%;
   }
 }
