@@ -298,6 +298,7 @@ h3 {
 .project2,
 .project3,
 .project4 {
+  background-size: cover;
   width: 450px;
   height: 400px;
   border-radius: 10px;
@@ -327,7 +328,7 @@ h3 {
 }
 
 .email__footer {
-  font-size: 18px;
+  font-size: 24px;
   color: white;
   display: flex;
   text-align: justify;
@@ -472,6 +473,10 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .email__footer {
+    font-size: 18px;
   }
 
   #mobile-menu.is-active .bar:nth-child(1) {

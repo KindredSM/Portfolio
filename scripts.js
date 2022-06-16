@@ -1,5 +1,6 @@
 const options = {
   root: null,
+  treshold: 0,
 };
 
 const navbar = document.querySelector(".navbar");
