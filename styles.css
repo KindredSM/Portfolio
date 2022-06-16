@@ -93,7 +93,7 @@ body {
   width: 100%;
   background-color: #0abdc6;
   outline: none;
-  border-radius: 30px;
+  border-radius: 50px;
   color: rgb(255, 255, 255);
   transition: all 0.3s ease;
   font-family: "PT Sans", sans-serif;
@@ -211,6 +211,21 @@ h3 {
   font-family: "PT Sans", sans-serif;
   color: white;
   font-size: 24px;
+}
+
+.about__contact {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0abdc6;
+  text-decoration: none;
+  transition: ease-in-out 0.3s;
+}
+
+.about__contact:hover {
+  color: white;
+  transition: all 0.3s ease;
 }
 
 .fade {

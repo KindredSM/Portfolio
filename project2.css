@@ -139,8 +139,8 @@ body {
 
 .annabel__img,
 .annabel__img2 {
-  width: 30%;
-  height: 30%;
+  max-width: 60%;
+  max-height: 60%;
   border-radius: 10px;
 }
 
@@ -339,7 +339,7 @@ body {
 
   .annabel__img,
   .annabel__img2 {
-    width: 80%;
+    max-width: 90%;
   }
 
   .project__description {
