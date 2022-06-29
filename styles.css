@@ -245,9 +245,9 @@ h3 {
 .project4:hover {
   transform: scale(1.05);
   transition: ease-in-out 0.3s;
-  opacity: 0.7;
+  opacity: 0.8;
   cursor: pointer;
-  box-shadow: #0abdc6 5px 5px 12px;
+  box-shadow: rgb(39, 253, 245) 5px 5px 12px;
 }
 
 #contact {
