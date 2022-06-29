@@ -30,10 +30,9 @@ h3 {
 h1 {
   padding-top: 250px;
   padding-bottom: 2rem;
-  color: rgb(255, 61, 170);
-  text-shadow: 0px -40px 100px, 0px 0px 2px, rgb(255 61 170) 0px 0px 1em,
-    rgb(255 61 170) 0px 0px 0.5em, rgb(255 61 170) 0px 0px 0.1em,
-    rgb(0 0 0) 0px 10px 3px;
+  color: rgb(39, 253, 245);
+  text-shadow: 0px -40px 100px, 0px 0px 2px, rgb(39 253 245) 0px 0px 1em,
+    rgb(39 253 245) 0px 0px 0.5em, rgb(39 253 245) 0px 0px 0.1em;
 }
 h2,
 h3 {
@@ -43,8 +42,7 @@ h3 {
 #description {
   color: rgb(39, 253, 245);
   text-shadow: 0px -40px 100px, 0px 0px 2px, rgb(39 253 245) 0px 0px 1em,
-    rgb(39 253 245) 0px 0px 0.5em, rgb(39 253 245) 0px 0px 0.1em,
-    rgb(0 0 0) 0px 10px 3px;
+    rgb(39 253 245) 0px 0px 0.5em, rgb(39 253 245) 0px 0px 0.1em;
 }
 
 .links__container {
@@ -142,7 +140,7 @@ h3 {
 }
 
 .fade {
-  animation: fadeIn 2s;
+  animation: fadeIn 1s;
   overflow: hidden;
 }
 
@@ -187,8 +185,7 @@ h3 {
 .p__header {
   color: rgb(39, 253, 245);
   text-shadow: 0px -40px 100px, 0px 0px 2px, rgb(39 253 245) 0px 0px 1em,
-    rgb(39 253 245) 0px 0px 0.5em, rgb(39 253 245) 0px 0px 0.1em,
-    rgb(0 0 0) 0px 10px 3px;
+    rgb(39 253 245) 0px 0px 0.5em, rgb(39 253 245) 0px 0px 0.1em;
   padding-top: 80px;
   font-size: 400%;
   font-weight: 100;
