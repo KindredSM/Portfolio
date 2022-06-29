@@ -23,17 +23,17 @@ h3 {
   align-items: center;
   vertical-align: middle;
   font-family: "Neon Future", sans-serif;
-  font-size: 50px;
   font-size: calc(min(7vw, 10vh));
+  line-height: 130%;
 }
 
 h1 {
   padding-top: 250px;
+  padding-bottom: 2rem;
   color: rgb(255, 61, 170);
   text-shadow: 0px -40px 100px, 0px 0px 2px, rgb(255 61 170) 0px 0px 1em,
     rgb(255 61 170) 0px 0px 0.5em, rgb(255 61 170) 0px 0px 0.1em,
     rgb(0 0 0) 0px 10px 3px;
-  line-height: 200%;
 }
 h2,
 h3 {
@@ -131,7 +131,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #0abdc6;
+  color: #00f2ff;
   text-decoration: none;
   transition: ease-in-out 0.3s;
 }
@@ -265,17 +265,19 @@ h3 {
   font-family: "PT sans";
   font-size: 24px;
   font-weight: 900;
-
   display: flex;
   text-align: justify;
   justify-content: center;
 }
 
 .email__address {
-  font-weight: 900;
+  font-weight: 100;
   font-family: "PT sans";
   text-decoration: none;
   color: rgb(39, 253, 245);
+  text-shadow: 0px -40px 100px, 0px 0px 2px, rgb(39 253 245) 0px 0px 1em,
+    rgb(39 253 245) 0px 0px 0.5em, rgb(39 253 245) 0px 0px 0.1em,
+    rgb(0 0 0) 0px 10px 3px;
 }
 
 /* MEDIA */
