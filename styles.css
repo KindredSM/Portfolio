@@ -30,9 +30,9 @@ h3 {
 h1 {
   padding-top: 250px;
   padding-bottom: 2rem;
-  color: rgb(39, 253, 245);
-  text-shadow: 0px -40px 100px, 0px 0px 2px, rgb(39 253 245) 0px 0px 1em,
-    rgb(39 253 245) 0px 0px 0.5em, rgb(39 253 245) 0px 0px 0.1em;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px -40px 100px, 0px 0px 2px, rgb(255, 255, 255) 0px 0px 1em,
+    rgb(255, 255, 255) 0px 0px 0.5em, rgb(255, 255, 255) 0px 0px 0.1em;
 }
 h2,
 h3 {
@@ -42,7 +42,8 @@ h3 {
 #description {
   color: rgb(39, 253, 245);
   text-shadow: 0px -40px 100px, 0px 0px 2px, rgb(39 253 245) 0px 0px 1em,
-    rgb(39 253 245) 0px 0px 0.5em, rgb(39 253 245) 0px 0px 0.1em;
+    rgb(39 253 245) 0px 0px 0.5em, rgb(39 253 245) 0px 0px 0.1em,
+    rgb(0 0 0) 0px 10px 3px;
 }
 
 .links__container {
@@ -129,7 +130,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #00f2ff;
+  color: rgb(39, 253, 245);
   text-decoration: none;
   transition: ease-in-out 0.3s;
 }
@@ -185,7 +186,8 @@ h3 {
 .p__header {
   color: rgb(39, 253, 245);
   text-shadow: 0px -40px 100px, 0px 0px 2px, rgb(39 253 245) 0px 0px 1em,
-    rgb(39 253 245) 0px 0px 0.5em, rgb(39 253 245) 0px 0px 0.1em;
+    rgb(39 253 245) 0px 0px 0.5em, rgb(39 253 245) 0px 0px 0.1em,
+    rgb(0 0 0) 0px 10px 3px;
   padding-top: 80px;
   font-size: 400%;
   font-weight: 100;
@@ -259,9 +261,11 @@ h3 {
 
 .email__footer {
   color: white;
-  font-family: "PT sans";
+  text-shadow: 0px -40px 100px, 0px 0px 2px, rgb(255, 255, 255) 0px 0px 1em,
+    rgb(255, 255, 255) 0px 0px 0.5em, rgb(255, 255, 255) 0px 0px 0.1em;
+  font-family: "Neon Future";
   font-size: 24px;
-  font-weight: 900;
+  font-weight: 100;
   display: flex;
   text-align: justify;
   justify-content: center;
@@ -269,7 +273,8 @@ h3 {
 
 .email__address {
   font-weight: 100;
-  font-family: "PT sans";
+  font-family: "Neon Future";
+  font-weight: 100;
   text-decoration: none;
   color: rgb(39, 253, 245);
   text-shadow: 0px -40px 100px, 0px 0px 2px, rgb(39 253 245) 0px 0px 1em,
