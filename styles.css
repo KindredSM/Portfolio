@@ -265,11 +265,9 @@ h3 {
 
 .email__footer {
   color: white;
-  text-shadow: 0px -40px 100px, 0px 0px 2px, rgb(255, 255, 255) 0px 0px 1em,
-    rgb(255, 255, 255) 0px 0px 0.5em, rgb(255, 255, 255) 0px 0px 0.1em;
-  font-family: "Neon Future";
+  font-family: "PT sans";
   font-size: 24px;
-  font-weight: 100;
+  font-weight: 900;
   display: flex;
   text-align: justify;
   justify-content: center;
@@ -277,13 +275,10 @@ h3 {
 
 .email__address {
   font-weight: 100;
-  font-family: "Neon Future";
-  font-weight: 100;
+  font-family: "PT Sans";
+  font-weight: 900;
   text-decoration: none;
-  color: rgb(39, 253, 245);
-  text-shadow: 0px -40px 100px, 0px 0px 2px, rgb(39 253 245) 0px 0px 1em,
-    rgb(39 253 245) 0px 0px 0.5em, rgb(39 253 245) 0px 0px 0.1em,
-    rgb(0 0 0) 0px 10px 3px;
+  color: white;
 }
 
 /* MEDIA */
