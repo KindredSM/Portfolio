@@ -236,8 +236,8 @@ h3 {
 .project3,
 .project4 {
   background-size: cover;
-  width: 450px;
-  height: 400px;
+  width: 350px;
+  height: 300px;
   border-radius: 10px;
   background-color: rgb(47, 47, 47);
   transition: ease-in-out 0.3s;
