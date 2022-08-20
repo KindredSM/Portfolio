@@ -204,7 +204,7 @@ h3 {
   grid-auto-flow: column;
   justify-content: center;
   align-content: center;
-  grid-template-rows: repeat(1, 2fr);
+  grid-template-rows: repeat(2, 2fr);
   gap: 100px;
   grid-auto-rows: minmax(100px, auto);
   padding-top: 100px;
@@ -321,8 +321,7 @@ h3 {
   .projects__wrapper {
     margin-left: auto;
     margin-right: auto;
-    padding-top: 0;
-    transform: scale(0.8);
+    padding-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -331,5 +330,11 @@ h3 {
 
   .email__footer {
     font-size: 18px;
+  }
+}
+
+@media (max-width: 500px) {
+  .projects__wrapper {
+    transform: scale(0.8);
   }
 }
