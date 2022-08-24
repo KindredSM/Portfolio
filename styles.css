@@ -236,9 +236,9 @@ h3 {
 .project3,
 .project4 {
   background-size: cover;
-  width: 350px;
+  width: 500px;
   height: 300px;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: rgb(47, 47, 47);
   transition: ease-in-out 0.3s;
 }
@@ -335,6 +335,15 @@ h3 {
 
 @media (max-width: 500px) {
   .projects__wrapper {
+    transform: scale(0.8);
+  }
+}
+
+@media (max-width: 400px) {
+  .project1,
+  .project2,
+  .project3,
+  .project4 {
     transform: scale(0.8);
   }
 }
