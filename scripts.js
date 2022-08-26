@@ -3,15 +3,6 @@ const options = {
   treshold: 0,
 };
 
-const navbar = document.querySelector(".navbar");
-window.onscroll = () => {
-  if (window.scrollY > 50) {
-    navbar.classList.add("nav-active");
-  } else {
-    navbar.classList.remove("nav-active");
-  }
-};
-
 const observer = new IntersectionObserver(function (entries, observer) {
   entries.forEach((entry) => {
     if (!entry.isIntersecting) {

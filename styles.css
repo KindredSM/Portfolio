@@ -334,6 +334,16 @@ h3 {
 }
 
 @media (max-width: 500px) {
+  #contact {
+    margin-top: 0px;
+    padding-top: 100px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #121212;
+    height: 200px;
+  }
+
   .projects__wrapper {
     transform: scale(0.7);
   }
