@@ -268,7 +268,7 @@ h3 {
   color: white;
   font-family: "PT sans";
   font-size: 24px;
-  font-weight: 900;
+  font-weight: bold;
   display: flex;
   text-align: justify;
   justify-content: center;
@@ -277,9 +277,15 @@ h3 {
 .email__address {
   font-weight: 100;
   font-family: "PT Sans";
-  font-weight: 900;
+  font-weight: bold;
   text-decoration: none;
   color: white;
+  transition: ease-in-out 0.2s;
+}
+
+.email__address:hover {
+  transition: ease-in-out 0.2s;
+  color: rgb(232, 232, 232);
 }
 
 /* MEDIA */
