@@ -33,7 +33,21 @@
 }
 
 #navbar__logo {
-  color: white;
+  background: #fd746c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff9068,
+    #fd746c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff9068,
+    #fd746c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
   background-size: 100%;
   display: flex;
   align-items: center;
@@ -86,10 +100,21 @@
   padding: 10px 20px;
   height: 100%;
   width: 100%;
-  background-color: #0abdc6;
+  background: #fd746c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff9068,
+    #fd746c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff9068,
+    #fd746c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   outline: none;
+  color: white;
   border-radius: 30px;
-  color: rgb(255, 255, 255);
   transition: all 0.3s ease;
   font-family: "PT Sans", sans-serif;
 }
@@ -102,10 +127,6 @@
 .button:hover {
   transform: scale(1.05);
   color: black;
-  background-color: rgb(39, 253, 245);
-  box-shadow: 0px -40px 100px, 0px 0px 2px, rgb(39 253 245) 0px 0px 1em,
-    rgb(39 253 245) 0px 0px 0.5em, rgb(39 253 245) 0px 0px 0.1em;
-  transition: all 0.3s ease;
 }
 
 @media (max-width: 1100px) {

@@ -13,38 +13,42 @@ body {
 
 /* head */
 
+.hero {
+  height: 100vh;
+}
+
 h1,
 h2,
-h3 {
-  font-weight: 100;
-  color: white;
+h3,
+#description {
+  font-weight: 900;
+  background: #fd746c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff9068,
+    #fd746c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff9068,
+    #fd746c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
   display: flex;
   justify-content: center;
   align-items: center;
   vertical-align: middle;
-  font-family: "Neon Future", sans-serif;
-  font-size: calc(min(7vw, 10vh));
+  font-family: "PT SANS", sans-serif;
+  font-size: calc(min(7vw, 14vh));
   line-height: 130%;
 }
 
 h1 {
   padding-top: 250px;
   padding-bottom: 2rem;
-  color: rgb(39, 253, 245);
-  text-shadow: 0px -40px 100px, 0px 0px 2px, rgb(39 253 245) 0px 0px 1em,
-    rgb(39 253 245) 0px 0px 0.5em, rgb(39 253 245) 0px 0px 0.1em,
-    rgb(0 0 0) 0px 10px 3px;
-}
-h2,
-h3 {
-  font-weight: 300;
-}
-
-#description {
-  color: rgb(39, 253, 245);
-  text-shadow: 0px -40px 100px, 0px 0px 2px, rgb(39 253 245) 0px 0px 1em,
-    rgb(39 253 245) 0px 0px 0.5em, rgb(39 253 245) 0px 0px 0.1em,
-    rgb(0 0 0) 0px 10px 3px;
 }
 
 .links__container {
@@ -56,27 +60,10 @@ h3 {
   flex-direction: row;
 }
 
-.github:hover {
-  box-shadow: 0px -40px 100px, 0px 0px 2px, rgb(39 253 245) 0px 0px 1em,
-    rgb(39 253 245) 0px 0px 0.5em, rgb(39 253 245) 0px 0px 0.1em;
-  transform: scale(1.1);
-  transition: all 0.3s ease;
-  background-color: rgb(39, 253, 245);
-  border-radius: 50%;
-}
-
-.linkedin:hover {
-  box-shadow: 0px -40px 100px, 0px 0px 2px, rgb(39 253 245) 0px 0px 1em,
-    rgb(39 253 245) 0px 0px 0.5em, rgb(39 253 245) 0px 0px 0.1em;
-  background-color: rgb(39, 253, 245);
-  transition: all 0.3s ease;
-  transform: scale(1.1);
-}
-
 .email:hover,
-.cv:hover {
-  filter: sepia(50%) saturate(2900%) hue-rotate(100deg) brightness(100%)
-    contrast(200%);
+.cv:hover,
+.linkedin:hover,
+.github:hover {
   transform: scale(1.1);
   transition: all 0.3s ease;
 }
@@ -84,7 +71,6 @@ h3 {
 .github {
   width: 50px;
   transition: all 0.3s ease;
-  border-radius: 50%;
 }
 
 .email {
@@ -135,14 +121,14 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgb(39, 253, 245);
+  color: #fd746c;
   text-decoration: none;
   transition: ease-in-out 0.3s;
 }
 
 .about__contact:hover {
   color: white;
-  transition: all 0.3s ease;
+  transition: ease-in-out 0.3s;
 }
 
 .fade {
@@ -181,7 +167,7 @@ h3 {
   width: 12px;
   padding-bottom: 10px;
   height: 60px;
-  background: #0abdc6;
+  background: #fd746c;
   display: inline-block;
 }
 
@@ -189,13 +175,25 @@ h3 {
   animation: cursor-blink 1s steps(2) infinite;
 }
 .p__header {
-  color: rgb(39, 253, 245);
-  text-shadow: 0px -40px 100px, 0px 0px 2px, rgb(39 253 245) 0px 0px 1em,
-    rgb(39 253 245) 0px 0px 0.5em, rgb(39 253 245) 0px 0px 0.1em,
-    rgb(0 0 0) 0px 10px 3px;
+  font-family: "PT sans", sans-serif;
+  background: #fd746c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff9068,
+    #fd746c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff9068,
+    #fd746c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
   padding-top: 80px;
   font-size: 400%;
-  font-weight: 100;
+  font-weight: 900;
 }
 
 .projects__wrapper {
@@ -251,7 +249,7 @@ h3 {
   transition: ease-in-out 0.3s;
   opacity: 0.8;
   cursor: pointer;
-  box-shadow: rgb(39, 253, 245) 5px 5px 12px;
+  box-shadow: rgb(251, 117, 68) 5px 5px 12px;
 }
 
 #contact {
@@ -279,13 +277,13 @@ h3 {
   font-family: "PT Sans";
   font-weight: bold;
   text-decoration: none;
-  color: white;
+  color: #fd746c;
   transition: ease-in-out 0.2s;
 }
 
 .email__address:hover {
   transition: ease-in-out 0.2s;
-  color: rgb(232, 232, 232);
+  color: white;
 }
 
 /* MEDIA */
@@ -348,6 +346,11 @@ h3 {
     width: 100%;
     background-color: #121212;
     height: 200px;
+  }
+
+  h1,
+  #description {
+    font-size: calc(min(14vw, 14vh));
   }
 
   .projects__wrapper {
