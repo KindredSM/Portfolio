@@ -237,7 +237,7 @@ h1 {
 .email__footer {
   color: white;
   font-family: "PT sans";
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   display: flex;
   text-align: justify;
@@ -303,10 +303,6 @@ h1 {
     justify-content: center;
     align-items: center;
   }
-
-  .email__footer {
-    font-size: 18px;
-  }
 }
 
 @media (max-width: 500px) {
@@ -319,7 +315,9 @@ h1 {
     background-color: #121212;
     height: 200px;
   }
-
+  .email__footer {
+    font-size: 1.2rem;
+  }
   h1,
   #description {
     font-size: calc(min(14vw, 14vh));
