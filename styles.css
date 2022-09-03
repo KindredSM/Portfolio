@@ -22,21 +22,7 @@ h2,
 h3,
 #description {
   font-weight: 900;
-  background: #fd746c; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #ff9068,
-    #fd746c
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #ff9068,
-    #fd746c
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
+  color: #fd746c;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -176,21 +162,7 @@ h1 {
 }
 .p__header {
   font-family: "PT sans", sans-serif;
-  background: #fd746c; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #ff9068,
-    #fd746c
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #ff9068,
-    #fd746c
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
+  color: #fd746c;
   padding-top: 80px;
   font-size: 400%;
   font-weight: 900;
