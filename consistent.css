@@ -33,7 +33,20 @@
 }
 
 #navbar__logo {
-  color: #fd746c;
+  background: #f46b45; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #eea849,
+    #f46b45
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #eea849,
+    #f46b45
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   background-size: 100%;
   display: flex;
   align-items: center;
@@ -86,16 +99,16 @@
   padding: 10px 20px;
   height: 100%;
   width: 100%;
-  background: #fd746c; /* fallback for old browsers */
+  background: #f46b45; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #ff9068,
-    #fd746c
+    #eea849,
+    #f46b45
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #ff9068,
-    #fd746c
+    #eea849,
+    #f46b45
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   outline: none;
