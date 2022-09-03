@@ -95,10 +95,8 @@
 }
 
 .navbar__links:hover {
-  color: rgb(39, 253, 245);
-  text-shadow: 0px -40px 100px, 0px 0px 2px, rgb(39 253 245) 0px 0px 1em,
-    rgb(39 253 245) 0px 0px 0.5em, rgb(39 253 245) 0px 0px 0.1em;
   transition: all 0.3s ease;
+  color: rgb(207, 207, 207);
 }
 
 .button:hover {
