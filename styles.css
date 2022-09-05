@@ -132,47 +132,16 @@ h1 {
   gap: 50px;
 }
 
-.box h2 {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-@keyframes cursor-blink {
-  0% {
-    opacity: 0;
-  }
-}
-
-.box h2::after {
-  content: "";
-  width: 12px;
-  padding-bottom: 10px;
-  height: 60px;
-  background: #fd746c;
-  display: inline-block;
-}
-
-.box h2::after {
-  animation: cursor-blink 1s steps(2) infinite;
-}
 .p__header {
   font-family: "PT sans", sans-serif;
-  background: #f46b45; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #eea849,
-    #f46b45
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #eea849,
-    #f46b45
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #f46b45;
+  background: -webkit-linear-gradient(to right, #eea849, #f46b45);
+
+  background: linear-gradient(to right, #eea849, #f46b45);
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding-top: 80px;
+  padding-top: 40px;
   font-size: 400%;
   font-weight: 900;
 }
@@ -186,7 +155,7 @@ h1 {
   grid-template-rows: repeat(2, 2fr);
   gap: 100px;
   grid-auto-rows: minmax(100px, auto);
-  padding-top: 100px;
+  padding-top: 10vh;
   padding-bottom: 40px;
 }
 
@@ -307,7 +276,7 @@ h1 {
   .projects__wrapper {
     margin-left: auto;
     margin-right: auto;
-    padding-top: 50px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -334,7 +303,12 @@ h1 {
   }
 
   .projects__wrapper {
-    transform: scale(0.7);
+    padding-top: 0vh;
+    padding-bottom: 0px;
+  }
+
+  .projects__wrapper {
+    transform: scale(0.8);
   }
 }
 
