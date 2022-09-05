@@ -46,24 +46,24 @@ h1 {
 .linkedin:hover,
 .github:hover {
   transform: scale(1.1);
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 .github {
   width: 50px;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 .email {
   width: 60px;
   height: 60px;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   cursor: pointer;
 }
 
 .cv {
   width: 60px;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   cursor: pointer;
 }
 
@@ -72,7 +72,7 @@ h1 {
   color: white;
   background-color: white;
   width: 50px;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   cursor: pointer;
 }
 
@@ -105,12 +105,12 @@ h1 {
   color: #f46b45;
 
   text-decoration: none;
-  transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.2s;
 }
 
 .about__contact:hover {
   color: white;
-  transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.2s;
 }
 
 .fade {
@@ -136,9 +136,7 @@ h1 {
   font-family: "PT sans", sans-serif;
   background: #f46b45;
   background: -webkit-linear-gradient(to right, #eea849, #f46b45);
-
   background: linear-gradient(to right, #eea849, #f46b45);
-
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding-top: 40px;
@@ -188,15 +186,15 @@ h1 {
   height: 300px;
   border-radius: 5px;
   background-color: rgb(47, 47, 47);
-  transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.2s;
 }
 
 .project1:hover,
 .project2:hover,
 .project3:hover,
 .project4:hover {
-  transform: scale(1.05);
-  transition: ease-in-out 0.3s;
+  transform: scale(1.02);
+  transition: ease-in-out 0.2s;
   opacity: 0.8;
   cursor: pointer;
   box-shadow: rgb(251, 117, 68) 5px 5px 12px;
@@ -285,6 +283,14 @@ h1 {
 }
 
 @media (max-width: 500px) {
+  .project1:hover,
+  .project2:hover,
+  .project3:hover,
+  .project4:hover {
+    transform: scale(0.95);
+    transition: ease-in-out 0.2s;
+  }
+
   #contact {
     margin-top: 0px;
     padding-top: 100px;

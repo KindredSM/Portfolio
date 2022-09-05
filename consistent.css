@@ -78,7 +78,7 @@
   text-decoration: none;
   font-weight: 500;
   height: 100%;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   font-family: "PT Sans", sans-serif;
 }
 
@@ -114,12 +114,12 @@
   outline: none;
   color: white;
   border-radius: 30px;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   font-family: "PT Sans", sans-serif;
 }
 
 .navbar__links:hover {
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   color: rgb(207, 207, 207);
 }
 
@@ -183,7 +183,7 @@
     width: 40px;
     height: 5px;
     margin: 10px auto;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
     background: white;
     z-index: 99;
   }
