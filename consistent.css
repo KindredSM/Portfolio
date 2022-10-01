@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  font-family: Arial, Verdana, Sans-Serif;
+  font-family: poppins;
 }
 
 .navbar {
@@ -18,7 +18,7 @@
   width: 100%;
   position: fixed;
   transition: 0.2s ease-in-out;
-  background-color: rgb(12, 12, 12);
+  background-color: rgb(246, 246, 246);
 }
 
 .navbar__container {
@@ -32,33 +32,6 @@
   padding: 0 50px;
 }
 
-#navbar__logo {
-  background: #f46b45; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #eea849,
-    #f46b45
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #eea849,
-    #f46b45
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 100%;
-  display: grid;
-  align-items: center;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 2.5rem;
-  font-weight: 900;
-  padding-left: 20px;
-  font-family: arial, Verdana, sans-serif;
-  z-index: 99;
-}
-
 .navbar__menu {
   display: flex;
   align-items: center;
@@ -70,16 +43,16 @@
 }
 
 .navbar__links {
-  color: rgb(255, 255, 255);
+  color: rgb(12, 12, 12);
   display: flex;
   align-items: center;
   justify-content: center;
   width: 125px;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 300;
   height: 100%;
   transition: all 0.2s ease;
-  font-family: "PT Sans", sans-serif;
+  font-family: "poppins", sans-serif;
 }
 
 .navbar__btn {
@@ -91,31 +64,32 @@
 }
 
 .button {
+  background-color: #121212;
   display: grid;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 500;
   padding: 10px 20px;
   height: 100%;
   width: 100%;
-  background: #f46b45; /* fallback for old browsers */
+  /* background: #f46b45; 
   background: -webkit-linear-gradient(
     to right,
     #eea849,
     #f46b45
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  ); 
   background: linear-gradient(
     to right,
     #eea849,
     #f46b45
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  );  */
 
   outline: none;
-  color: white;
+  color: rgb(246, 246, 246);
   border-radius: 30px;
   transition: all 0.2s ease;
-  font-family: "PT Sans", sans-serif;
+  font-family: "poppins", sans-serif;
 }
 
 .navbar__links:hover {
@@ -125,7 +99,7 @@
 
 .button:hover {
   transform: scale(1.05);
-  color: black;
+  color: rgb(229, 229, 229);
 }
 
 @media (max-width: 1100px) {
@@ -151,7 +125,7 @@
 
   .navbar__menu {
     right: -1000px;
-    background-color: rgb(12, 12, 12);
+    background-color: rgb(246, 246, 246);
     display: grid;
     grid-template-columns: auto;
     margin: 0;
@@ -164,7 +138,7 @@
   }
 
   .navbar__menu.active {
-    background: rgba(12, 12, 12, 0.87);
+    background: rgba(246, 246, 246, 0.87);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     right: 0%;
@@ -184,7 +158,7 @@
     height: 5px;
     margin: 10px auto;
     transition: all 0.2s ease-in-out;
-    background: white;
+    background: rgb(12, 12, 12);
     z-index: 99;
   }
 

@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(12, 12, 12);
+  background-color: rgb(246, 246, 246);
 }
 
 /* head */
@@ -12,24 +12,31 @@ h1,
 h2,
 h3,
 #description {
-  font-weight: 900;
-  background-color: #f46b45;
+  font-weight: 500;
+  /* background-color: #f46b45;
   background-image: -webkit-linear-gradient(to right, #eea849, #f46b45);
   background-image: linear-gradient(to right, #eea849, #f46b45);
+  background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
+  color: rgb(12, 12, 12);
   display: grid;
   justify-content: center;
   align-items: center;
   vertical-align: middle;
-  font-family: "PT SANS", sans-serif;
-  font-size: calc(min(7vw, 14vh));
+  font-family: poppins;
+  font-size: 5vw;
   line-height: 130%;
 }
 
 h1 {
   padding-top: 250px;
   padding-bottom: 2rem;
+}
+
+#description {
+  font-weight: 300;
+  font-size: 3vw;
 }
 
 .links__container {
@@ -62,15 +69,12 @@ h1 {
 }
 
 .cv {
-  width: 60px;
+  width: 50px;
   transition: all 0.2s ease;
   cursor: pointer;
 }
 
 .linkedin {
-  border-radius: 50%;
-  color: white;
-  background-color: white;
   width: 50px;
   transition: all 0.2s ease;
   cursor: pointer;
@@ -87,13 +91,14 @@ h1 {
   text-align: justify;
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: #121212;
+  background-color: rgb(246, 246, 246);
 }
 .bio__text {
+  font-weight: 300;
   width: 600px;
   line-height: 150%;
-  font-family: "PT Sans", sans-serif;
-  color: white;
+  font-family: "poppins", sans-serif;
+  color: rgb(12, 12, 12);
   font-size: 24px;
 }
 
@@ -102,14 +107,14 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #f46b45;
+  color: rgb(12, 12, 12);
 
   text-decoration: none;
   transition: ease-in-out 0.2s;
 }
 
 .about__contact:hover {
-  color: white;
+  color: #a1b7f6;
   transition: ease-in-out 0.2s;
 }
 
@@ -133,19 +138,15 @@ h1 {
 }
 
 .p__header {
-  font-family: "PT sans", sans-serif;
-  background: #f46b45;
-  background: -webkit-linear-gradient(to right, #eea849, #f46b45);
-  background: linear-gradient(to right, #eea849, #f46b45);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-family: "poppins", sans-serif;
+  color: rgb(12, 12, 12);
   padding-top: 40px;
   font-size: 400%;
-  font-weight: 900;
+  font-weight: 500;
 }
 
 .projects__wrapper {
-  color: white;
+  color: rgb(12, 12, 12);
   display: grid;
   grid-auto-flow: column;
   justify-content: center;
@@ -197,7 +198,7 @@ h1 {
   transition: ease-in-out 0.2s;
   opacity: 0.8;
   cursor: pointer;
-  box-shadow: rgb(251, 117, 68) 5px 5px 12px;
+  box-shadow: #ecebeb 7px 3px 3px;
 }
 
 #contact {
@@ -206,15 +207,15 @@ h1 {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #121212;
+  background-color: rgb(246, 246, 246);
   height: 200px;
 }
 
 .email__footer {
-  color: white;
-  font-family: "PT sans";
+  color: rgb(12, 12, 12);
+  font-family: "poppins";
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 300;
   display: flex;
   text-align: justify;
   justify-content: center;
@@ -222,17 +223,17 @@ h1 {
 
 .email__address {
   font-weight: 100;
-  font-family: "PT Sans";
-  font-weight: bold;
+  font-family: "poppins";
+  font-weight: 500;
   text-decoration: none;
-  color: #f46b45;
+  color: rgb(12, 12, 12);
 
   transition: ease-in-out 0.2s;
 }
 
 .email__address:hover {
   transition: ease-in-out 0.2s;
-  color: white;
+  color: rgb(12, 12, 12);
 }
 
 /* MEDIA */
@@ -282,7 +283,7 @@ h1 {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .project1:hover,
   .project2:hover,
   .project3:hover,
@@ -297,15 +298,14 @@ h1 {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #121212;
     height: 200px;
   }
   .email__footer {
     font-size: 1.2rem;
   }
-  h1,
+
   #description {
-    font-size: calc(min(14vw, 14vh));
+    font-size: 2rem;
   }
 
   .projects__wrapper {

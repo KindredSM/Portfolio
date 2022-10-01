@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(12, 12, 12);
+  background-color: rgb(246, 246, 246);
 }
 
 #project {
@@ -8,31 +8,34 @@ body {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  font-family: arial, Verdana, sans-serif;
+  font-family: poppins;
   gap: 30px;
 }
 
 .project1__header {
+  font-weight: 500;
   text-align: center;
-  color: white;
+  color: rgb(12, 12, 12);
   padding-top: 100px;
   font-size: 2rem;
   text-align: center;
-  font-family: arial, Verdana, sans-serif;
+  font-family: poppins;
 }
 
 .project1__type {
   text-align: center;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 1.5rem;
-  color: white;
-  font-family: arial, Verdana, sans-serif;
+  color: rgb(12, 12, 12);
+  font-family: poppins;
 }
 
 .project__tech {
-  font-weight: 900;
   font-size: 1.5rem;
-  font-family: arial, Verdana, sans-serif;
+  font-family: poppins;
+
+  color: rgb(12, 12, 12);
+  font-weight: 300;
 }
 
 .links__container {
@@ -66,44 +69,28 @@ body {
   padding: 10px 20px;
   height: 100%;
   width: 100%;
-  color: white;
   text-decoration: none;
-  font-weight: 700;
-  background: #f46b45; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #eea849,
-    #f46b45
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #eea849,
-    #f46b45
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  font-weight: 500;
+  background-color: rgb(12, 12, 12);
   outline: none;
   border-radius: 30px;
   color: rgb(255, 255, 255);
   transition: all 0.2s ease;
-  font-family: "PT Sans", sans-serif;
+  font-family: "poppins", sans-serif;
 }
 
 .live__site:hover {
-  transform: scale(1.1);
-  color: black;
+  transform: scale(1.05);
+  color: rgb(229, 229, 229);
   transition: all 0.2s ease;
 }
 
 .project__description {
-  color: white;
+  color: rgb(12, 12, 12);
   font-size: 20px;
+  font-weight: 300;
   line-height: 150%;
   width: 60%;
-}
-
-.project__tech {
-  color: white;
-  font-weight: 300;
 }
 
 .fade {
@@ -114,35 +101,25 @@ body {
 .next__project {
   font-size: 24px;
   text-align: center;
-  padding: 10px 20px;
+  padding: 12px 20px;
   height: 100%;
   width: 15%;
   color: white;
   text-decoration: none;
-  font-weight: 700;
-  background: #f46b45; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #eea849,
-    #f46b45
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #eea849,
-    #f46b45
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-weight: 500;
+  background-color: rgb(12, 12, 12);
 
   outline: none;
   border-radius: 30px;
   color: rgb(255, 255, 255);
   transition: all 0.2s ease;
-  font-family: "PT Sans", sans-serif;
+  font-family: "poppins", sans-serif;
   margin: 50px 0px 100px 0px;
 }
 
 .next__project:hover {
-  transform: scale(1.1);
-  color: black;
+  transform: scale(1.05);
+  color: rgb(229, 229, 229);
   transition: all 0.2s ease;
 }
 
@@ -164,7 +141,6 @@ body {
   }
 
   .project__description {
-    color: white;
     font-size: 20px;
     line-height: 150%;
     width: 80%;
