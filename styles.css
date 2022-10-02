@@ -41,7 +41,6 @@ h1 {
 
 .links__container {
   padding-top: 50px;
-  padding-bottom: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -268,7 +267,7 @@ a {
   .email,
   .cv {
     display: flex;
-    width: 50px;
+    /* width: 50px; */
   }
 
   .bio__container {
@@ -290,6 +289,10 @@ a {
 }
 
 @media (max-width: 800px) {
+  .links__container {
+    transform: scale(0.8);
+  }
+
   .project1:hover,
   .project2:hover,
   .project3:hover,
