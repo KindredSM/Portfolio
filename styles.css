@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(246, 246, 246);
+  background-color: rgb(248, 248, 248);
 }
 
 /* head */
@@ -25,7 +25,7 @@ h3,
   align-items: center;
   vertical-align: middle;
   font-family: poppins;
-  font-size: 5vw;
+  font-size: 3vw;
   line-height: 130%;
 }
 
@@ -36,7 +36,7 @@ h1 {
 
 #description {
   font-weight: 300;
-  font-size: 3vw;
+  font-size: 2vw;
 }
 
 .links__container {
@@ -57,19 +57,20 @@ h1 {
 }
 
 .github {
-  width: 50px;
+  width: 45px;
   transition: all 0.2s ease;
 }
 
 .email {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 55px;
   transition: all 0.2s ease;
   cursor: pointer;
 }
 
 .cv {
-  width: 50px;
+  width: 35px;
+  height: 40px;
   transition: all 0.2s ease;
   cursor: pointer;
 }
@@ -81,17 +82,17 @@ h1 {
 }
 
 .bio__header {
-  border-radius: 10px;
-  font-size: 34px;
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 .bio__container {
-  margin-top: 150px;
+  /* margin-top: 150px; */
   display: flex;
   justify-content: center;
   text-align: justify;
-  padding-top: 100px;
+  /* padding-top: 100px; */
   padding-bottom: 100px;
-  background-color: rgb(246, 246, 246);
+  background-color: rgb(248, 248, 248);
 }
 .bio__text {
   font-weight: 300;
@@ -99,7 +100,7 @@ h1 {
   line-height: 150%;
   font-family: "poppins", sans-serif;
   color: rgb(12, 12, 12);
-  font-size: 24px;
+  font-size: 1.2rem;
 }
 
 .about__contact {
@@ -108,13 +109,14 @@ h1 {
   justify-content: center;
   align-items: center;
   color: rgb(12, 12, 12);
-
   text-decoration: none;
   transition: ease-in-out 0.2s;
+  font-weight: 500;
 }
 
 .about__contact:hover {
-  color: #a1b7f6;
+  color: rgb(207, 207, 207);
+
   transition: ease-in-out 0.2s;
 }
 
@@ -141,7 +143,7 @@ h1 {
   font-family: "poppins", sans-serif;
   color: rgb(12, 12, 12);
   padding-top: 40px;
-  font-size: 400%;
+  font-size: 2rem;
   font-weight: 500;
 }
 
@@ -156,6 +158,19 @@ h1 {
   grid-auto-rows: minmax(100px, auto);
   padding-top: 10vh;
   padding-bottom: 40px;
+}
+
+.project__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  color: rgb(12, 12, 12);
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+a {
+  text-decoration: none;
 }
 
 .project1 {
@@ -185,7 +200,7 @@ h1 {
   background-size: cover;
   width: 500px;
   height: 300px;
-  border-radius: 5px;
+  border-radius: 2px;
   background-color: rgb(47, 47, 47);
   transition: ease-in-out 0.2s;
 }
@@ -198,7 +213,7 @@ h1 {
   transition: ease-in-out 0.2s;
   opacity: 0.8;
   cursor: pointer;
-  box-shadow: #ecebeb 7px 3px 3px;
+  box-shadow: #e3e3e3 7px 3px 10px;
 }
 
 #contact {
@@ -207,7 +222,7 @@ h1 {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: rgb(246, 246, 246);
+  background-color: rgb(248, 248, 248);
   height: 200px;
 }
 
@@ -233,7 +248,7 @@ h1 {
 
 .email__address:hover {
   transition: ease-in-out 0.2s;
-  color: rgb(12, 12, 12);
+  color: rgb(207, 207, 207);
 }
 
 /* MEDIA */
@@ -260,14 +275,6 @@ h1 {
     padding: 20px 20px 20px 20px;
   }
 
-  .bio__text {
-    font-size: 20px;
-  }
-
-  .box h2::after {
-    display: none;
-  }
-
   .h3 {
     transform: scale(1.5);
   }
@@ -275,7 +282,6 @@ h1 {
   .projects__wrapper {
     margin-left: auto;
     margin-right: auto;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -311,6 +317,7 @@ h1 {
   .projects__wrapper {
     padding-top: 0vh;
     padding-bottom: 0px;
+    gap: 50px;
   }
 
   .projects__wrapper {
