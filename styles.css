@@ -117,7 +117,7 @@ h1 {
 }
 
 .about__contact:hover {
-  color: rgb(207, 207, 207);
+  color: rgb(117, 117, 117);
 
   transition: ease-in-out 0.2s;
 }
@@ -228,7 +228,7 @@ a {
 .email__footer {
   color: rgb(12, 12, 12);
   font-family: "poppins";
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 300;
   display: flex;
   text-align: justify;
@@ -247,7 +247,7 @@ a {
 
 .email__address:hover {
   transition: ease-in-out 0.2s;
-  color: rgb(207, 207, 207);
+  color: rgb(117, 117, 117);
 }
 
 /* MEDIA */
