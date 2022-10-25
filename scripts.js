@@ -1,22 +1,12 @@
-// const options = {
-//   root: null,
-//   treshold: 0,
-// };
+gsap.registerPlugin(ScrollTrigger);
 
-// const observer = new IntersectionObserver(function (entries, observer) {
-//   entries.forEach((entry) => {
-//     if (!entry.isIntersecting) {
-//       return;
-//     }
-//     console.log(entry.target);
-//     entry.target.classList.toggle("fade");
-//     observer.unobserve(entry.target);
-//   });
-// }, options);
-
-// observer.observe(about);
-// observer.observe(hero__cont);
-// observer.observe(projects);
+gsap.from(".bio__container", {
+  scrollTrigger: ".bio__container",
+  duration: 1,
+  x: 50,
+  opacity: 0,
+  ease: "bounce",
+});
 
 const menu = document.querySelector("#mobile-menu");
 const menuLinks = document.querySelector(".navbar__menu");
