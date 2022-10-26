@@ -48,7 +48,7 @@ h3,
 .cv:hover,
 .linkedin:hover,
 .github:hover {
-  transform: scale(1.1);
+  transform: scale(1.01);
   transition: all 0.2s ease;
 }
 
@@ -202,11 +202,11 @@ a {
 .project2:hover,
 .project3:hover,
 .project4:hover {
-  transform: scale(1.02);
+  transform: scale(1.01);
   transition: ease-in-out 0.2s;
   opacity: 0.8;
   cursor: pointer;
-  box-shadow: #e3e3e3 7px 3px 10px;
+  box-shadow: #e3e3e3 3px 3px 15px;
 }
 
 #contact {
@@ -247,7 +247,7 @@ a {
 /* MEDIA */
 
 @media (max-width: 1100px) {
-  h1 {
+  .header {
     font-size: 2rem;
   }
 
@@ -274,7 +274,7 @@ a {
   .project2:hover,
   .project3:hover,
   .project4:hover {
-    transform: scale(0.95);
+    transform: scale(1);
     transition: ease-in-out 0.2s;
   }
 
