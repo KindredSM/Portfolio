@@ -16,7 +16,7 @@ function init() {
 
   document.body.appendChild(renderer.domElement);
 
-  const geometry = new THREE.SphereGeometry(100, 100, 100);
+  const geometry = new THREE.SphereGeometry(100, 100, 50);
 
   const material = new THREE.PointsMaterial({
     color: 0x000000,
@@ -27,14 +27,14 @@ function init() {
 
   scene.add(sphere);
 
-  camera.position.z = 190;
+  camera.position.z = 200;
 }
 
 function animate() {
   requestAnimationFrame(animate);
 
   // sphere.rotation.x += 0.002;
-  sphere.rotation.y += 0.001;
+  sphere.rotation.y += 0.002;
 
   renderer.render(scene, camera);
 }
@@ -54,21 +54,13 @@ animate();
 
 gsap.registerPlugin(ScrollTrigger);
 
-// gsap.from(".hero__container", {
-//   scrollTrigger: {
-//     trigger: ".hero__container",
-//   },
-//   duration: 3,
-//   y: 30,
-//   opacity: 0,
-//   ease: "power4.out",
-// });
 gsap.to(".white__box", {
   scrollTrigger: {
     trigger: ".hero__container",
   },
-  duration: 4,
-  x: 1500,
+  duration: 3,
+  x: 1000,
+  width: 0,
   ease: "power4.out",
 });
 gsap.from(".bio__container", {
