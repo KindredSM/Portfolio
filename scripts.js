@@ -57,11 +57,9 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.from(".hero__container", {
   scrollTrigger: {
     trigger: ".hero__container",
-    start: "20px 80%",
   },
-  duration: 1.5,
-  y: -50,
-  opacity: -1,
+  duration: 3,
+  color: "#ff44ee",
   ease: "power4.out",
 });
 gsap.from(".bio__container", {
