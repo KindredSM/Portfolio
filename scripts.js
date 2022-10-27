@@ -1,65 +1,74 @@
-// let camera, scene, renderer, cube;
+let camera, scene, renderer, sphere;
 
-// function init() {
-//   scene = new THREE.Scene();
+function init() {
+  scene = new THREE.Scene();
 
-//   camera = new THREE.PerspectiveCamera(
-//     75,
-//     window.innerWidth / window.innerHeight,
-//     0.1,
-//     1000
-//   );
+  camera = new THREE.PerspectiveCamera(
+    75,
+    window.innerWidth / window.innerHeight,
+    0.1,
+    1000
+  );
 
-//   renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+  renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
 
-//   renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.setSize(window.innerWidth, window.innerHeight);
 
-//   document.body.appendChild(renderer.domElement);
+  document.body.appendChild(renderer.domElement);
 
-//   const geometry = new THREE.BoxGeometry(5, 5, 5);
+  const geometry = new THREE.SphereGeometry(100, 100, 100);
 
-//   const material = new THREE.PointsMaterial({
-//     color: 0xd26e99,
-//     size: 0.1,
-//   });
+  const material = new THREE.PointsMaterial({
+    color: 0x000000,
+    size: 0.3,
+  });
 
-//   cube = new THREE.Points(geometry, material);
+  sphere = new THREE.Points(geometry, material);
 
-//   scene.add(cube);
+  scene.add(sphere);
 
-//   camera.position.z = 3;
-// }
+  camera.position.z = 190;
+}
 
-// function animate() {
-//   requestAnimationFrame(animate);
+function animate() {
+  requestAnimationFrame(animate);
 
-//   cube.rotation.x += 0.002;
-//   cube.rotation.y += 0.002;
+  // sphere.rotation.x += 0.002;
+  sphere.rotation.y += 0.001;
 
-//   renderer.render(scene, camera);
-// }
+  renderer.render(scene, camera);
+}
 
-// function onWindowResize() {
-//   camera.aspect = window.innerWidth / window.innerHeight;
+function onWindowResize() {
+  camera.aspect = window.innerWidth / window.innerHeight;
 
-//   camera.updateProjectionMatrix();
+  camera.updateProjectionMatrix();
 
-//   renderer.setSize(window.innerWidth, window.innerHeight);
-// }
+  renderer.setSize(window.innerWidth, window.innerHeight);
+}
 
-// window.addEventListener("resize", onWindowResize, false);
+window.addEventListener("resize", onWindowResize, false);
 
-// init();
-// animate();
+init();
+animate();
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.from(".hero__container", {
+// gsap.from(".hero__container", {
+//   scrollTrigger: {
+//     trigger: ".hero__container",
+//   },
+//   duration: 3,
+//   y: 30,
+//   opacity: 0,
+//   ease: "power4.out",
+// });
+gsap.to(".white__box", {
   scrollTrigger: {
     trigger: ".hero__container",
   },
-  duration: 3,
-  color: "#ff44ee",
+  duration: 4,
+  x: 1500,
   ease: "power4.out",
 });
 gsap.from(".bio__container", {
@@ -91,7 +100,7 @@ gsap.from(".projects__wrapper", {
   duration: 1.5,
   y: -30,
   opacity: 0,
-  ease: "bounce",
+  ease: "power4.out",
 });
 gsap.from("#contact", {
   scrollTrigger: {
