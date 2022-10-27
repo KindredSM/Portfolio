@@ -1,3 +1,57 @@
+// let camera, scene, renderer, cube;
+
+// function init() {
+//   scene = new THREE.Scene();
+
+//   camera = new THREE.PerspectiveCamera(
+//     75,
+//     window.innerWidth / window.innerHeight,
+//     0.1,
+//     1000
+//   );
+
+//   renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+
+//   renderer.setSize(window.innerWidth, window.innerHeight);
+
+//   document.body.appendChild(renderer.domElement);
+
+//   const geometry = new THREE.BoxGeometry(5, 5, 5);
+
+//   const material = new THREE.PointsMaterial({
+//     color: 0xd26e99,
+//     size: 0.1,
+//   });
+
+//   cube = new THREE.Points(geometry, material);
+
+//   scene.add(cube);
+
+//   camera.position.z = 3;
+// }
+
+// function animate() {
+//   requestAnimationFrame(animate);
+
+//   cube.rotation.x += 0.002;
+//   cube.rotation.y += 0.002;
+
+//   renderer.render(scene, camera);
+// }
+
+// function onWindowResize() {
+//   camera.aspect = window.innerWidth / window.innerHeight;
+
+//   camera.updateProjectionMatrix();
+
+//   renderer.setSize(window.innerWidth, window.innerHeight);
+// }
+
+// window.addEventListener("resize", onWindowResize, false);
+
+// init();
+// animate();
+
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.from(".hero__container", {
@@ -51,33 +105,6 @@ gsap.from("#contact", {
   ease: "power4.out",
 });
 
-// const scene = new THREE.Scene();
-// const camera = new THREE.PerspectiveCamera(
-//   75,
-//   window.innerWidth / window.innerHeight,
-//   0.1,
-//   1000
-// );
-
-// const renderer = new THREE.WebGL1Renderer();
-
-// renderer.setSize(window.innerWidth, window.innerHeight);
-
-// document.body.appendChild(renderer.domElement);
-
-// const geometry = new THREE.BoxGeometry(1, 1, 1);
-// const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
-// const cube = new THREE.Mesh(geometry, material);
-// scene.add(cube);
-
-// camera.position.z = 5;
-
-// function animate() {
-//   requestAnimationFrame(animate);
-
-//   renderer.render(scene, camera);
-// }
-
 const menu = document.querySelector("#mobile-menu");
 const menuLinks = document.querySelector(".navbar__menu");
 const navLogo = document.querySelector("#navbar__logo");
@@ -98,4 +125,3 @@ const hideMobileMenu = () => {
 };
 
 menuLinks.addEventListener("click", hideMobileMenu);
-navLogo.addEventListener("click", hideMobileMenu);
