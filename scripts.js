@@ -16,7 +16,7 @@ function init() {
 
   document.body.appendChild(renderer.domElement);
 
-  const geometry = new THREE.SphereGeometry(100, 100, 50);
+  const geometry = new THREE.SphereGeometry(100, 30, 30);
 
   const material = new THREE.PointsMaterial({
     color: 0x000000,
@@ -27,7 +27,7 @@ function init() {
 
   scene.add(sphere);
 
-  camera.position.z = 200;
+  camera.position.z = 400;
 }
 
 function animate() {
@@ -58,8 +58,8 @@ gsap.to(".white__box", {
   scrollTrigger: {
     trigger: ".hero__container",
   },
-  duration: 3,
-  x: 1000,
+  duration: 4,
+  x: 1300,
   width: 0,
   ease: "power4.out",
 });
