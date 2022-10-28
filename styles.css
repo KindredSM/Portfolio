@@ -9,7 +9,7 @@ canvas {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: -1;
@@ -206,7 +206,6 @@ a {
 .project4:hover {
   transform: scale(1.01);
   transition: ease-in-out 0.2s;
-  opacity: 0.8;
   cursor: pointer;
   box-shadow: #e3e3e3 3px 3px 15px;
 }

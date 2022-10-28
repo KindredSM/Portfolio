@@ -16,7 +16,7 @@ function init() {
 
   document.body.appendChild(renderer.domElement);
 
-  const geometry = new THREE.SphereGeometry(120, 50, 50);
+  const geometry = new THREE.SphereGeometry(100, 100, 100);
 
   const material = new THREE.PointsMaterial({
     color: 0x000000,
@@ -27,7 +27,7 @@ function init() {
 
   scene.add(sphere);
 
-  camera.position.z = 400;
+  camera.position.z = 200;
 }
 
 function animate() {
