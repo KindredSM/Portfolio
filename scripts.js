@@ -1,3 +1,7 @@
+//THREE.JS
+
+// const { default: gsap } = require("gsap");
+
 let camera, scene, renderer, sphere;
 
 function init() {
@@ -33,7 +37,6 @@ function init() {
 function animate() {
   requestAnimationFrame(animate);
 
-  // sphere.rotation.x += 0.002;
   sphere.rotation.y += 0.002;
 
   renderer.render(scene, camera);
@@ -52,20 +55,27 @@ window.addEventListener("resize", onWindowResize, false);
 init();
 animate();
 
+// ANIMATIONS
+
+const text = new SplitType("#description, .header");
 gsap.registerPlugin(ScrollTrigger);
 
-// gsap.(".white__box", {
-//   scrollTrigger: {
-//     trigger: ".hero__container",
-//   },
-//   duration: 4,
-//   x: 1300,
-//   width: 0,
-//   ease: "power4.out",
-// });
-gsap.from(".bio__container", {
+gsap.to(".char", {
+  y: 0,
+  stagger: 0.03,
+  delay: 0.2,
+  duration: 0.05,
+});
+gsap.from(".links__container", {
+  duration: 1.5,
+  delay: 0.5,
+  y: 30,
+  opacity: 0,
+  ease: "power4.out",
+});
+gsap.from(".bio__text", {
   scrollTrigger: {
-    trigger: ".bio__container",
+    trigger: ".bio__text",
     start: "20px 80%",
   },
   duration: 1.5,
@@ -94,16 +104,8 @@ gsap.from(".projects__wrapper", {
   opacity: 0,
   ease: "power4.out",
 });
-gsap.from("#contact", {
-  scrollTrigger: {
-    trigger: "#contact",
-    start: "20px 80%",
-  },
-  duration: 1.5,
-  opacity: 0,
-  ease: "power4.out",
-});
 
+// MAIN JS
 const menu = document.querySelector("#mobile-menu");
 const menuLinks = document.querySelector(".navbar__menu");
 const navLogo = document.querySelector("#navbar__logo");
