@@ -148,8 +148,8 @@ h3,
 .p__header {
   font-family: "poppins", sans-serif;
   color: rgb(12, 12, 12);
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 15vh;
+  padding-bottom: 15vh;
   font-size: 2rem;
   font-weight: 500;
 }
@@ -162,7 +162,7 @@ h3,
   grid-template-rows: repeat(2, 2fr);
   gap: 100px;
   grid-auto-rows: minmax(100px, auto);
-  padding-top: 10vh;
+  /* padding-top: 10vh; */
   padding-bottom: 40px;
 }
 
