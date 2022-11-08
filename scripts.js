@@ -62,8 +62,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 gsap.to(".char", {
   y: 0,
-  stagger: 0.03,
-  delay: 0.2,
+  stagger: 0.02,
+  delay: 0.5,
   duration: 0.05,
 });
 gsap.from(".links__container", {

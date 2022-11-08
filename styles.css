@@ -46,12 +46,12 @@ h3,
 
 .header {
   padding-top: 300px;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); */
 }
 
 .char {
   transform: translateY(50px);
-  transition: transform 0.2s;
+  transition: transform 0.5s;
 }
 
 #description {
@@ -113,9 +113,6 @@ h3,
   display: flex;
   justify-content: center;
   text-align: justify;
-  /* background-color: rgb(248, 248, 248, 0.8); */
-  /* backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px); */
   padding-bottom: 100px;
 }
 .bio__text {
