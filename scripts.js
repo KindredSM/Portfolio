@@ -2,45 +2,45 @@
 
 // const { default: gsap } = require("gsap");
 
-let camera, scene, renderer, sphere;
+// let camera, scene, renderer, sphere;
 
-function init() {
-  scene = new THREE.Scene();
+// function init() {
+//   scene = new THREE.Scene();
 
-  camera = new THREE.PerspectiveCamera(
-    75,
-    window.innerWidth / window.innerHeight,
-    0.1,
-    1000
-  );
+//   camera = new THREE.PerspectiveCamera(
+//     75,
+//     window.innerWidth / window.innerHeight,
+//     0.1,
+//     1000
+//   );
 
-  renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+//   renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
 
-  renderer.setSize(window.innerWidth, window.innerHeight);
+//   renderer.setSize(window.innerWidth, window.innerHeight);
 
-  document.body.appendChild(renderer.domElement);
+//   document.body.appendChild(renderer.domElement);
 
-  const geometry = new THREE.SphereGeometry(100, 100, 100);
+//   const geometry = new THREE.SphereGeometry(100, 100, 100);
 
-  const material = new THREE.PointsMaterial({
-    color: 0x000000,
-    size: 0.3,
-  });
+//   const material = new THREE.PointsMaterial({
+//     color: 0x000000,
+//     size: 0.3,
+//   });
 
-  sphere = new THREE.Points(geometry, material);
+//   sphere = new THREE.Points(geometry, material);
 
-  scene.add(sphere);
+//   scene.add(sphere);
 
-  camera.position.z = 200;
-}
+//   camera.position.z = 200;
+// }
 
-function animate() {
-  requestAnimationFrame(animate);
+// function animate() {
+//   requestAnimationFrame(animate);
 
-  sphere.rotation.y += 0.002;
+//   sphere.rotation.y += 0.002;
 
-  renderer.render(scene, camera);
-}
+//   renderer.render(scene, camera);
+// }
 
 // function onWindowResize() {
 //   camera.aspect = window.innerWidth / window.innerHeight;
