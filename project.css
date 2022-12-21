@@ -53,6 +53,11 @@ body {
   height: 400px;
   border-radius: 2px;
 }
+
+.project__image {
+  width: 600px;
+  border-radius: 2px;
+}
 .annabel__github {
   display: flex;
   width: 50px;
