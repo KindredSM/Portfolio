@@ -52,8 +52,8 @@
 
 // window.addEventListener("resize", onWindowResize, false);
 
-init();
-animate();
+// init();
+// animate();
 
 // ANIMATIONS
 

@@ -1,8 +1,0 @@
-@font-face {
-  font-family: "Neon Future";
-  src: url("/fonts/NeonFuture.woff2") format("woff2"),
-    url("/fonts/NeonFuture.woff") format("woff"),
-    url("/fonts/NeonFuture.ttf") format("truetype");
-  font-style: normal;
-  font-display: swap;
-}

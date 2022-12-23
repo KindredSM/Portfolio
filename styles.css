@@ -6,7 +6,7 @@ body {
 /* canvas {
   width: 100%;
   height: 100%;
-  display: none;
+  display: block;
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -289,9 +289,6 @@ a {
     width: 100%;
     height: 200px;
   }
-  .email__footer {
-    font-size: 1rem;
-  }
 
   #description {
     font-size: 1rem;
@@ -308,11 +305,14 @@ a {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 350px) {
   .project1,
   .project2,
   .project3,
   .project4 {
     transform: scale(0.8);
+  }
+  .email__footer {
+    font-size: 0.8rem;
   }
 }
