@@ -16,6 +16,11 @@ body {
 } */
 
 .hero__container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   height: 100vh;
   width: 100vw;
   z-index: 2;
@@ -35,27 +40,23 @@ h3,
   font-family: poppins;
   font-size: 3vw;
   line-height: 150%;
-}
-
-.header {
-  padding-top: 300px;
-  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 .char {
-  transform: translateY(50px);
+  transform: translateY(9rem);
   transition: transform 0.5s;
 }
 
 #description {
   font-weight: 300;
-  font-size: 2rem;
-  clip-path: polygon(0 0, 100% 0, 100% 150%, 0% 100%);
-  line-height: 2.2rem;
+  font-size: 2vw;
+  /* line-height: 2.2rem; */
+  overflow: hidden;
 }
 
 .links__container {
-  padding-top: 5rem;
+  padding-top: 2rem;
   gap: 40px;
   height: 5rem;
   width: 100%;
@@ -99,7 +100,7 @@ h3,
 }
 
 .bio__header {
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   font-weight: 300;
 }
 .bio__container {
@@ -111,11 +112,11 @@ h3,
 .bio__text {
   padding-top: 50px;
   font-weight: 300;
-  width: 600px;
+  width: 50%;
   line-height: 150%;
   font-family: "poppins", sans-serif;
   color: rgb(12, 12, 12);
-  font-size: 1.2rem;
+  font-size: 1.5vw;
 }
 
 .about__contact {
@@ -140,7 +141,7 @@ h3,
   color: rgb(12, 12, 12);
   padding-top: 5vh;
   padding-bottom: 15vh;
-  font-size: 2rem;
+  font-size: 2vw;
   font-weight: 500;
 }
 
@@ -163,7 +164,7 @@ h3,
   padding-top: 10px;
   color: rgb(12, 12, 12);
   font-weight: 300;
-  font-size: 1.2rem;
+  font-size: 1.5vw;
 }
 a {
   text-decoration: none;
@@ -222,7 +223,7 @@ a {
 .email__footer {
   color: rgb(12, 12, 12);
   font-family: "poppins";
-  font-size: 1.2rem;
+  font-size: 1.2vw;
   font-weight: 300;
   display: flex;
   text-align: justify;
@@ -246,17 +247,39 @@ a {
 
 /* MEDIA */
 
+@media (min-width: 2000px) {
+  .project1,
+  .project2,
+  .project3,
+  .project4 {
+    width: 20vw;
+    height: 12.5vw;
+  }
+}
+
 @media (max-width: 1100px) {
+  #description,
+  .bio__text,
+  .bio__header {
+    font-size: 1rem;
+    width: 80%;
+  }
+
+  .project__text {
+    font-size: 1.5rem;
+  }
+
+  .p__header {
+    font-size: 1.5rem;
+    padding: 7vh;
+  }
+
   .header {
     font-size: 2rem;
   }
 
   .bio__container {
     padding: 20px 20px 20px 20px;
-  }
-
-  .p__header {
-    padding: 7vh;
   }
 
   .projects__wrapper {
@@ -266,6 +289,9 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .email__footer {
+    font-size: 1rem;
   }
 }
 
@@ -288,10 +314,6 @@ a {
     left: 0;
     width: 100%;
     height: 200px;
-  }
-
-  #description {
-    font-size: 1rem;
   }
 
   .projects__wrapper {
