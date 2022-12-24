@@ -21,19 +21,19 @@ body {
   text-align: center;
   color: rgb(12, 12, 12);
   padding-top: 100px;
-  font-size: 2rem;
+  font-size: 2vw;
   font-family: poppins;
 }
 
 .project1__type {
   font-weight: 300;
-  font-size: 1.2rem;
+  font-size: 1.5vw;
   color: rgb(12, 12, 12);
   font-family: poppins;
 }
 
 .project__tech {
-  font-size: 1.2rem;
+  font-size: 1.5vw;
   font-family: poppins;
   color: rgb(12, 12, 12);
   font-weight: 300;
@@ -95,7 +95,7 @@ body {
 
 .project__description {
   color: rgb(12, 12, 12);
-  font-size: 20px;
+  font-size: 1.5vw;
   font-weight: 300;
   line-height: 150%;
   width: 60%;
@@ -107,7 +107,7 @@ body {
 }
 
 .next__project {
-  font-size: 1.2rem;
+  font-size: 1.5vw;
   text-align: center;
   padding: 12px 20px;
   height: 100%;
@@ -142,6 +142,16 @@ body {
   .annabel__img,
   .annabel__img2 {
     width: 100%;
+  }
+
+  .project1__header {
+    font-size: 30px;
+  }
+
+  .project1__type,
+  .project__tech,
+  .next__project {
+    font-size: 20px;
   }
 
   .project__description {
