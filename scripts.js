@@ -1,7 +1,5 @@
 //THREE.JS
 
-// const { default: gsap } = require("gsap");
-
 // let camera, scene, renderer, sphere;
 
 // function init() {
