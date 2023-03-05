@@ -92,10 +92,6 @@ h3,
   cursor: pointer;
 }
 
-.bio__header {
-  font-size: 2rem;
-  font-weight: 300;
-}
 .bio__container {
   font-size: 1.5rem;
   display: flex;
@@ -108,22 +104,9 @@ h3,
   font-weight: 300;
   list-style: none;
 }
-.bio__text {
-  padding-top: 50px;
-  font-weight: 300;
-  width: 50%;
-  font-family: "poppins", sans-serif;
-  color: rgb(12, 12, 12);
-}
 
-.about__contact {
-  padding-top: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgb(12, 12, 12);
-  text-decoration: none;
-  transition: ease-in-out 0.2s;
+.bio__header {
+  font-size: 2rem;
   font-weight: 500;
 }
 
