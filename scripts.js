@@ -71,13 +71,14 @@ gsap.from(".links__container", {
   opacity: 0,
   ease: "power4.out",
 });
-gsap.from(".bio__text", {
+gsap.from(".bio__container", {
   scrollTrigger: {
-    trigger: ".bio__text",
+    trigger: ".bio__container",
     start: "20px 80%",
   },
+  stagger: 1,
   duration: 1.5,
-  y: -20,
+  x: -20,
   opacity: 0,
   ease: "power4.out",
 });

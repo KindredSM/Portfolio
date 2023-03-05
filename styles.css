@@ -93,23 +93,27 @@ h3,
 }
 
 .bio__header {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 300;
 }
 .bio__container {
+  font-size: 1.5rem;
   display: flex;
+  gap: 10px;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
   text-align: justify;
   padding-bottom: 100px;
+  font-weight: 300;
+  list-style: none;
 }
 .bio__text {
   padding-top: 50px;
   font-weight: 300;
   width: 50%;
-  line-height: 150%;
   font-family: "poppins", sans-serif;
   color: rgb(12, 12, 12);
-  font-size: 1.5rem;
 }
 
 .about__contact {
@@ -224,18 +228,21 @@ a {
 }
 
 .email__address {
+  border-radius: 2px;
+  padding: 10px;
+  background-color: black;
   font-weight: 100;
   font-family: "poppins";
   font-weight: 500;
   text-decoration: none;
-  color: rgb(12, 12, 12);
+  color: rgb(255, 255, 255);
 
   transition: ease-in-out 0.2s;
 }
 
 .email__address:hover {
   transition: ease-in-out 0.2s;
-  color: rgb(117, 117, 117);
+  background-color: rgb(66, 66, 66);
 }
 
 /* MEDIA */
