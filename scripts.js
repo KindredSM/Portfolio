@@ -71,14 +71,23 @@ gsap.from(".links__container", {
   opacity: 0,
   ease: "power4.out",
 });
+gsap.from(".tech", {
+  scrollTrigger: {
+    trigger: ".tech",
+    start: "20px 80%",
+  },
+  duration: 1.5,
+  x: -20,
+  opacity: 0,
+  ease: "power4.out",
+});
 gsap.from(".bio__container", {
   scrollTrigger: {
     trigger: ".bio__container",
     start: "20px 80%",
   },
-  stagger: 1,
   duration: 1.5,
-  x: -20,
+  x: 20,
   opacity: 0,
   ease: "power4.out",
 });

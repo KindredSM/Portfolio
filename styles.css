@@ -106,8 +106,9 @@ h3,
 }
 
 .bio__header {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 500;
+  padding-bottom: 20px;
 }
 
 .about__contact:hover {
@@ -121,7 +122,7 @@ h3,
   color: rgb(12, 12, 12);
   padding-top: 5vh;
   padding-bottom: 15vh;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
