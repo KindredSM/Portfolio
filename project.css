@@ -58,14 +58,14 @@ body {
   width: 600px;
   border-radius: 2px;
 }
-.annabel__github {
+.img__github {
   display: flex;
-  width: 50px;
+  width: 40px;
   transition: all 0.2s ease;
   border-radius: 50%;
 }
 
-.annabel__github:hover {
+.img__github:hover {
   opacity: 0.8;
   transition: all 0.2s ease;
   border-radius: 50%;
@@ -110,6 +110,8 @@ body {
   font-size: 1.5rem;
   text-align: center;
   padding: 12px 20px;
+  background-color: #e8e8e8;
+  border-radius: 30px;
   height: 100%;
   width: 15%;
   color: rgb(12, 12, 12);
