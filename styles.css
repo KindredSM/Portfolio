@@ -7,6 +7,10 @@ body {
   margin: 0;
 }
 
+a {
+  color: black;
+}
+
 .hero__container {
   padding-bottom: 5vh;
   display: flex;
@@ -48,46 +52,54 @@ h3,
   overflow: hidden;
 }
 
+.tech-item {
+  padding: 5px 15px;
+  margin: 10px;
+  border-radius: 30px;
+  background-color: #e8e8e8;
+}
+
 .links__container {
-  padding-top: 2rem;
-  gap: 40px;
-  height: 5rem;
-  width: 100%;
+  margin-top: 20px;
+  padding: 15px 25px;
+  gap: 25px;
+
+  border-radius: 30px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: row;
+  background-color: #e8e8e8;
 }
 
 .email:hover,
 .cv:hover,
 .linkedin:hover,
 .github:hover {
-  transform: scale(1.05);
-  transition: all 0.2s ease;
+  opacity: 0.8;
 }
 
 .github {
-  width: 35px;
+  width: 30px;
   transition: all 0.2s ease;
 }
 
 .email {
-  width: 40px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
   transition: all 0.2s ease;
   cursor: pointer;
 }
 
 .cv {
-  width: 25px;
-  height: 30px;
+  height: 35px;
   transition: all 0.2s ease;
   cursor: pointer;
 }
 
 .linkedin {
-  width: 40px;
+  width: 35px;
+  height: 35px;
   transition: all 0.2s ease;
   cursor: pointer;
 }
@@ -101,8 +113,13 @@ h3,
   align-items: center;
   text-align: center;
   padding-bottom: 100px;
-  font-weight: 300;
+  font-weight: 400;
   list-style: none;
+}
+
+.tech-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .bio__header {
@@ -144,7 +161,7 @@ h3,
   align-items: center;
   padding-top: 10px;
   color: rgb(12, 12, 12);
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1.5rem;
 }
 a {
@@ -187,7 +204,7 @@ a {
 .project2:hover,
 .project3:hover,
 .project4:hover {
-  transform: scale(1.01);
+  opacity: 0.8;
   transition: ease-in-out 0.2s;
   cursor: pointer;
 }
@@ -205,28 +222,28 @@ a {
   color: rgb(12, 12, 12);
   font-family: "poppins";
   font-size: 1.2rem;
-  font-weight: 300;
+  font-weight: 400;
   display: flex;
   text-align: justify;
   justify-content: center;
 }
 
 .email__address {
-  border-radius: 2px;
-  padding: 10px;
-  background-color: black;
+  border-radius: 30px;
+  padding: 15px;
+  background-color: #e8e8e8;
   font-weight: 100;
   font-family: "poppins";
   font-weight: 500;
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 
   transition: ease-in-out 0.2s;
 }
 
 .email__address:hover {
   transition: ease-in-out 0.2s;
-  background-color: rgb(66, 66, 66);
+  opacity: 0.8;
 }
 
 /* MEDIA */
@@ -296,7 +313,7 @@ a {
   }
 
   .projects__wrapper {
-    transform: scale(0.8);
+    opacity: 0.8;
   }
 }
 
@@ -305,7 +322,7 @@ a {
   .project2,
   .project3,
   .project4 {
-    transform: scale(0.8);
+    opacity: 0.8;
   }
   .email__footer {
     font-size: 0.8rem;
