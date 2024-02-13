@@ -119,13 +119,12 @@ h3,
 
 .tech-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(5, 1fr);
 }
-
 .bio__header {
   font-size: 1.5rem;
   font-weight: 500;
-  padding-bottom: 20px;
+  padding-bottom: 90px;
 }
 
 .about__contact:hover {
@@ -294,9 +293,9 @@ a {
 }
 
 @media (max-width: 800px) {
-  /* .links__container {
-    transform: scale(0.8);
-  } */
+  .tech-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
   #contact {
     margin-top: 0px;
