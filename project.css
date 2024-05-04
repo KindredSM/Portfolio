@@ -51,7 +51,7 @@ body {
   object-fit: contain;
   width: 500px;
   height: 400px;
-  border-radius: 2px;
+  border-radius: 8px;
 }
 
 .project__image {
