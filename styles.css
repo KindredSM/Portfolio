@@ -74,7 +74,7 @@ h3,
 .tech-item {
   padding: 5px 15px;
   margin: 10px;
-  border-radius: 30px;
+  border-radius: 50px;
   background-color: #e8e8e8;
 }
 
@@ -83,7 +83,7 @@ h3,
   padding: 15px 25px;
   gap: 15px;
 
-  border-radius: 30px;
+  border-radius: 50px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -230,8 +230,8 @@ a {
 }
 
 .email__address {
-  border-radius: 30px;
-  padding: 15px;
+  border-radius: 50px;
+  padding: 15px 25px;
   background-color: #e8e8e8;
   font-weight: 100;
   font-family: "poppins";
