@@ -45,16 +45,6 @@ gsap.from(".p__header", {
   opacity: 0,
   ease: "power4.out",
 });
-gsap.from(".projects__wrapper", {
-  scrollTrigger: {
-    trigger: ".projects__wrapper",
-    start: "20px 80%",
-  },
-  duration: 1.5,
-  y: -20,
-  opacity: 0,
-  ease: "power4.out",
-});
 
 const menu = document.querySelector("#mobile-menu");
 const menuLinks = document.querySelector(".navbar__menu");
