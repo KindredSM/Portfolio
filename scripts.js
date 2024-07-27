@@ -1,7 +1,5 @@
-// Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
 
-// Hero section animations
 gsap.from(".header, #description, .tagline", {
   opacity: 0,
   y: 20,
@@ -18,7 +16,6 @@ gsap.from(".links__container", {
   ease: "power1.out",
 });
 
-// About section animations
 gsap.from(".bio__header", {
   scrollTrigger: {
     trigger: ".bio__header",
@@ -42,7 +39,6 @@ gsap.from(".tech-item", {
   ease: "power1.out",
 });
 
-// Projects section animations
 gsap.from(".p__header", {
   scrollTrigger: {
     trigger: ".p__header",
@@ -66,7 +62,6 @@ gsap.from(".project__item", {
   ease: "power1.out",
 });
 
-// Contact section animation
 gsap.from(".email__footer", {
   scrollTrigger: {
     trigger: "#contact",
@@ -78,7 +73,6 @@ gsap.from(".email__footer", {
   ease: "power1.out",
 });
 
-// Mobile menu functionality
 const menu = document.querySelector("#mobile-menu");
 const menuLinks = document.querySelector(".navbar__menu");
 
