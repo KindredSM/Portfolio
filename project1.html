@@ -4,15 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="project.css" />
+    <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="consistent.css" />
+    <link rel="stylesheet" href="project.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
       rel="stylesheet" />
-
-    <title>Kindred Salway</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <title>Prodia - Kindred Salway</title>
+  </head>
+  <body>
     <nav class="navbar">
       <div class="navbar__container">
         <div class="navbar__toggle" id="mobile-menu">
@@ -24,46 +29,66 @@
             <a href="index.html" class="navbar__links">Home</a>
           </li>
           <li class="navbar__btn">
-            <a href="mailto:kdsm@protonmail.com" class="button" id="signup"
-              >Contact</a
-            >
+            <a
+              href="mailto:kindred@kindredsalway.com"
+              class="button"
+              id="signup">
+              Contact <i class="fas fa-comments"></i>
+            </a>
           </li>
         </ul>
       </div>
     </nav>
-  </head>
-  <body>
+
     <section id="project">
-      <h1 class="project1__header">Prodia</h1>
-      <h2 class="project1__type">Front End / Design</h2>
-      <h3 class="project__tech">HTML, CSS, TypeScript, Vue.js</h3>
-      <img src="Images/prodia banner.png" class="main-image" />
-      <section class="links__container">
-        <a href="https://github.com/prodialabs/prodia-mvp" target="blank">
-          <img src="Images/GithubIcon.svg" class="img__github" />
-          <a
-            class="live__site"
-            href="https://app.prodia.com/#/"
-            target="_blank">
-            Live app</a
-          >
-        </a>
-      </section>
-      <p class="project__description">
-        This application is the home for NFT streaming and AI art generation
-        platform Prodia, built within a growing team of designers / developers.
-        <br />
-        <br />
-        <b class="bold">The Process</b> <br />
-        <br />
-
-        My duties include translating design to code and building upon the UI of
-        of the application, weather this be tweaks to existing elements or
-        building and integrating entirely new components.
-      </p>
-
-      <a class="next__project" href="project2.html">Next Project</a>
+      <div class="project__header-container">
+        <h1 class="project__header">Prodia</h1>
+        <h2 class="project__subheader">Front End / Design</h2>
+        <h3 class="project__tech">HTML, CSS, TypeScript, Vue.js</h3>
+      </div>
+      <div class="project__content">
+        <div class="project__image-container">
+          <img
+            src="Images/prodia banner.png"
+            class="project__image"
+            alt="Prodia project" />
+          <div class="project__links">
+            <a
+              class="project__link"
+              href="https://app.prodia.com/#/"
+              target="_blank">
+              Live app <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+        <div class="project__text-container">
+          <div class="project__description">
+            <p>
+              This application is the home for NFT streaming and AI art
+              generation platform Prodia, built within a growing team of
+              designers / developers.
+            </p>
+            <h4 class="project__section-header">The Process</h4>
+            <p>
+              My duties include translating design to code and building upon the
+              UI of of the application, whether this be tweaks to existing
+              elements or building and integrating entirely new components.
+            </p>
+          </div>
+          <div class="project__navigation">
+            <a class="button button--small" href="project5.html">
+              <i class="fas fa-arrow-left"></i> Previous
+            </a>
+            <a class="button button--small" href="project2.html">
+              Next <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src="project.js"></script>
   </body>
-  <script src="project.js"></script>
 </html>

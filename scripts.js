@@ -1,54 +1,80 @@
-const text = new SplitType("#description, .header");
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.to(".char", {
-  y: 0,
-  stagger: 0.02,
-  delay: 0.5,
-  duration: 0.05,
+gsap.from(".header, #description, .tagline", {
+  opacity: 0,
+  y: 20,
+  duration: 0.8,
+  stagger: 0.2,
+  ease: "power2.out",
 });
+
 gsap.from(".links__container", {
-  duration: 1.5,
-  delay: 0.5,
-  y: 30,
   opacity: 0,
-  ease: "power4.out",
+  y: 10,
+  duration: 0.5,
+  delay: 0.8,
+  ease: "power1.out",
 });
-gsap.from(".tech", {
+
+gsap.from(".bio__header", {
   scrollTrigger: {
-    trigger: ".tech",
-    start: "20px 80%",
+    trigger: ".bio__header",
+    start: "top 85%",
   },
-  duration: 1.5,
-  x: -20,
+  duration: 0.5,
+  y: 15,
   opacity: 0,
-  ease: "power4.out",
+  ease: "power1.out",
 });
-gsap.from(".bio__container", {
+
+gsap.from(".tech-item", {
   scrollTrigger: {
-    trigger: ".bio__container",
-    start: "20px 80%",
+    trigger: ".tech-container",
+    start: "top 85%",
   },
-  duration: 1.5,
-  x: 20,
+  duration: 0.5,
+  scale: 0.95,
   opacity: 0,
-  ease: "power4.out",
+  stagger: 0.05,
+  ease: "power1.out",
 });
 
 gsap.from(".p__header", {
   scrollTrigger: {
     trigger: ".p__header",
-    start: "20px 80%",
+    start: "top 85%",
   },
-  duration: 1.5,
-  y: -20,
+  duration: 0.5,
+  y: 15,
   opacity: 0,
-  ease: "power4.out",
+  ease: "power1.out",
+});
+
+gsap.from(".project__item", {
+  scrollTrigger: {
+    trigger: ".projects__wrapper",
+    start: "top 85%",
+  },
+  duration: 0.5,
+  y: 20,
+  opacity: 0,
+  stagger: 0.1,
+  ease: "power1.out",
+});
+
+gsap.from(".email__footer", {
+  scrollTrigger: {
+    trigger: "#contact",
+    start: "top 95%",
+  },
+  duration: 0.5,
+  y: 15,
+  opacity: 0,
+  ease: "power1.out",
 });
 
 const menu = document.querySelector("#mobile-menu");
 const menuLinks = document.querySelector(".navbar__menu");
-const navLogo = document.querySelector("#navbar__logo");
 
 const mobileMenu = () => {
   menu.classList.toggle("is-active");
