@@ -301,9 +301,11 @@ h3,
 }
 
 .projects__note {
+  margin: 0 auto;
   text-align: center;
   font-style: italic;
-  margin-top: 20px;
+
+  width: 90%;
   color: #777;
 }
 
