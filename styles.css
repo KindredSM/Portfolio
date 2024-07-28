@@ -145,7 +145,7 @@ h3,
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-bottom: 100px;
+  padding-bottom: 70px;
   font-weight: 400;
   list-style: none;
 }
@@ -163,7 +163,7 @@ h3,
 .bio__header {
   font-size: 24px;
   font-weight: 500;
-  padding-bottom: 90px;
+  padding-bottom: 70px;
 }
 
 .about__contact:hover {
@@ -174,7 +174,7 @@ h3,
 .p__header {
   color: rgb(12, 12, 12);
   padding-top: 0px;
-  padding-bottom: 90px;
+  padding-bottom: 70px;
   font-size: 24px;
   font-weight: 500;
 }
