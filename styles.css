@@ -116,7 +116,7 @@ h3,
   color: white;
   font-size: 24px;
   transition: all 0.2s ease;
-  border: #dedede 1px solid;
+  border: #5a5a5a 2px solid;
 }
 
 .social-link:hover {
@@ -279,6 +279,7 @@ h3,
   font-weight: 500;
   text-decoration: none;
   color: white;
+  border: #5a5a5a 2px solid;
   transition: all 0.2s ease;
   font-size: 16px;
 }
