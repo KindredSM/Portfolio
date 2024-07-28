@@ -150,6 +150,10 @@ h3,
   list-style: none;
 }
 
+.ts-icon {
+  width: 14px;
+}
+
 .tech-container {
   display: grid;
   gap: 16px;
@@ -346,12 +350,18 @@ h3,
     font-size: 32px;
   }
 
+  .tagline {
+    font-size: 16px;
+    max-width: 300px;
+  }
+
   .bio__container {
     padding: 20px;
   }
 
   .projects__wrapper {
     grid-template-columns: repeat(2, 1fr);
+    max-width: 90%;
   }
 
   .email__footer {
