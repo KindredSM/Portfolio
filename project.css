@@ -15,7 +15,7 @@
 .project__header {
   font-size: 36px;
   font-weight: 500;
-  color: rgb(12, 12, 12);
+  color: #404040;
   margin-bottom: 10px;
 }
 
@@ -62,14 +62,14 @@
 .project__description {
   font-size: 16px;
   line-height: 1.6;
-  color: rgb(12, 12, 12);
+  color: #404040;
   margin-bottom: 20px;
 }
 
 .project__section-header {
   font-size: 20px;
   font-weight: 500;
-  color: rgb(12, 12, 12);
+  color: #404040;
   margin: 20px 0 10px;
 }
 

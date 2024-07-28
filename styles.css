@@ -30,7 +30,7 @@ h2,
 h3,
 #description {
   font-weight: 500;
-  color: rgb(12, 12, 12);
+  color: #404040;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -116,6 +116,7 @@ h3,
   color: white;
   font-size: 24px;
   transition: all 0.2s ease;
+  border: #dedede 1px solid;
 }
 
 .social-link:hover {
@@ -132,8 +133,9 @@ h3,
   border-radius: 50px;
   width: 100%;
   gap: 10px;
-  background-color: #404040;
-  color: white;
+  background-color: #efefef;
+  border: #dedede 1px solid;
+  color: #404040;
   font-size: 16px;
 }
 
@@ -172,7 +174,7 @@ h3,
 }
 
 .p__header {
-  color: rgb(12, 12, 12);
+  color: #404040;
   padding-top: 0px;
   padding-bottom: 70px;
   font-size: 24px;
@@ -224,7 +226,7 @@ h3,
   margin: 0;
   font-size: 18px;
   font-weight: 500;
-  color: rgb(12, 12, 12);
+  color: #404040;
 }
 
 .project__text p {
@@ -258,7 +260,7 @@ h3,
 }
 
 .email__footer {
-  color: rgb(12, 12, 12);
+  color: #404040;
   font-size: 16px;
   font-weight: 400;
   display: flex;

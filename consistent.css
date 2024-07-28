@@ -51,7 +51,7 @@ a {
 }
 
 .navbar__links {
-  color: rgb(12, 12, 12);
+  color: #404040;
   display: flex;
   align-items: center;
   justify-content: center;
