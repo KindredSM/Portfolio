@@ -327,13 +327,6 @@ h3,
 
 /* MEDIA QUERIES */
 
-@media (min-width: 2000px) {
-  .project {
-    width: 20vw;
-    height: 12.5vw;
-  }
-}
-
 @media (max-width: 1100px) {
   #description {
     font-size: 16px;
