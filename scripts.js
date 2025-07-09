@@ -1,5 +1,16 @@
 gsap.registerPlugin(ScrollTrigger);
 
+// Mobile menu toggle functionality
+const mobileMenuBtn = document.getElementById('mobile-menu');
+const navbarMenu = document.querySelector('.navbar__menu');
+
+if (mobileMenuBtn) {
+  mobileMenuBtn.addEventListener('click', () => {
+    navbarMenu.classList.toggle('active');
+    mobileMenuBtn.classList.toggle('active');
+  });
+}
+
 gsap.from(".header, #description, .tagline", {
   opacity: 0,
   y: 20,
