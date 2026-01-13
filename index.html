@@ -2,245 +2,66 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Kindred Salway, Software Engineer and UI/UX Designer located in Brighton, UK." />
+      content="Kindred Salway - Founder of Sonura Studio. Helping startups build tech." />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="consistent.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
       rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <title>Kindred Salway</title>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="navbar__container">
-        <div class="navbar__toggle" id="mobile-menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
+    <main>
+      <header class="hero">
+        <h1>Kindred Salway</h1>
+        <div class="hero-links">
+          <a href="https://github.com/KindredSM" target="_blank">GitHub</a>
+          <a href="https://x.com/KindredSalway" target="_blank">X</a>
+          <a href="https://www.linkedin.com/in/kindred-salway-8a05b6240/" target="_blank">LinkedIn</a>
         </div>
-        <ul class="navbar__menu">
-          <li class="navbar__item">
-            <a href="#home" class="navbar__links">Home</a>
-          </li>
-          <li class="navbar__item">
-            <a href="writing.html" class="navbar__links">Writing</a>
-          </li>
-          <li class="navbar__btn">
-            <a
-              href="mailto:kindred@kindredsalway.com"
-              class="button"
-              id="signup">
-              Contact <i class="fas fa-comments"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+      </header>
 
-    <div class="hero" id="home">
-      <div class="white__box"></div>
-      <div class="hero__container" id="hero__cont">
-        <h1 class="header">Kindred Salway</h1>
-        <h2 class="hero-description" id="description">
-          Software Engineer & UI/UX Designer
-        </h2>
-        <h3 class="tagline">I build software for the next generation web.</h3>
-        <div class="links__container" id="links">
-          <a
-            href="https://github.com/KindredSM"
-            target="_blank"
-            class="social-link">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="mailto:kindred@kindredsalway.com" class="social-link">
-            <i class="fas fa-envelope"></i>
-          </a>
-          <a href="Images/CV-aug-25.pdf" target="_blank" class="social-link">
-            <i class="fas fa-file-alt"></i>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/kindred-salway-8a05b6240/"
-            target="_blank"
-            class="social-link">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-        </div>
-        <a href="#about">
-          <img src="Images/scroll.svg" alt="" class="arrow" />
+      <section class="section">
+        <h2>About</h2>
+        <p class="about-text">
+          Self-taught engineer based in London. I build software, make music, and think a lot about where ideas come from.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Now</h2>
+        <a href="https://sonurastudio.com" target="_blank" class="card">
+          <span class="card-title">Sonura Studio</span>
+          <span class="card-desc">AI-powered music production</span>
+          <span class="card-arrow">&rarr;</span>
         </a>
-      </div>
-    </div>
+      </section>
 
-    <div id="about">
-      <div class="bio__container">
-        <span class="bio__header">Technologies</span>
-        <div class="tech-container">
-          <li class="tech-item">Vue.js <i class="fab fa-vuejs"></i></li>
-          <li class="tech-item">
-            Next.js
-            <img src="Images/next-icon-dark.svg" alt="" class="next-icon" />
-          </li>
-          <li class="tech-item">React <i class="fab fa-react"></i></li>
-          <li class="tech-item">JavaScript <i class="fab fa-js"></i></li>
-          <li class="tech-item">
-            TypeScript
-            <img src="Images/ts-icon-dark.svg" alt="" class="ts-icon" />
-          </li>
-          <li class="tech-item">TailwindCSS <i class="fab fa-css3-alt"></i></li>
-          <li class="tech-item">Git <i class="fab fa-git-alt"></i></li>
-          <li class="tech-item">Figma <i class="fab fa-figma"></i></li>
-          <li class="tech-item">Node.js <i class="fab fa-node-js"></i></li>
-          <li class="tech-item">Supabase <i class="fas fa-database"></i></li>
-          <li class="tech-item">Python <i class="fab fa-python"></i></li>
-          <li class="tech-item">Go <i class="fab fa-golang"></i></li>
+      <section class="section">
+        <h2>Writing</h2>
+        <div class="list">
+          <a href="writing.html" class="list-item">
+            <span>Essays & notes</span>
+            <span class="list-arrow">&rarr;</span>
+          </a>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <section id="projects">
-      <h3 class="p__header">Portfolio</h3>
-      <div class="projects__wrapper">
-        <div class="project__item">
-          <a
-            href="project1.html"
-            class="project"
-            style="background-image: url('Images/prodia-landing.jpg')"></a>
-          <div class="project__info">
-            <div class="project__text">
-              <h4>Prodia</h4>
-              <p>Vue, TypeScript, Figma</p>
-            </div>
-            <div class="project__links">
-              <a
-                href="https://app.prodia.com"
-                target="_blank"
-                class="project__link"
-                ><i class="fas fa-external-link-alt"></i
-              ></a>
-            </div>
-          </div>
+      <section class="section">
+        <h2>Contact</h2>
+        <div class="list">
+          <a href="mailto:kindred@sonurastudio.com" class="list-item">
+            <span>kindred@sonurastudio.com</span>
+          </a>
+          <a href="mailto:kindred@kindredsalway.com" class="list-item">
+            <span>kindred@kindredsalway.com</span>
+          </a>
         </div>
-        <div class="project__item">
-          <a
-            href="project2.html"
-            class="project"
-            style="background-image: url('Images/datajar-landing.jpg')"></a>
-          <div class="project__info">
-            <div class="project__text">
-              <h4>dataJAR</h4>
-              <p>Vue, JavaScript, Chart.js, Django, Lucidchart</p>
-            </div>
-            <div class="project__links">
-              <a
-                href="https://datajar.co.uk"
-                target="_blank"
-                class="project__link"
-                ><i class="fas fa-external-link-alt"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <div class="project__item">
-          <a
-            href="project3.html"
-            class="project"
-            style="background-image: url('Images/dy-landing.jpg')"></a>
-          <div class="project__info">
-            <div class="project__text">
-              <h4>Dismiss Yourself</h4>
-              <p>Figma, Vue, Sanity</p>
-            </div>
-            <div class="project__links">
-              <a
-                href="https://dismissyourself.com"
-                target="_blank"
-                class="project__link"
-                ><i class="fas fa-external-link-alt"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <div class="project__item">
-          <a
-            href="project4.html"
-            class="project"
-            style="background-image: url('Images/myuser-landing.jpg')"></a>
-          <div class="project__info">
-            <div class="project__text">
-              <h4>myuser</h4>
-              <p>Vue, TypeScript, Figma, HTMX, Go</p>
-            </div>
-            <div class="project__links">
-              <a class="project__link" style="opacity: 0.5"
-                ><i class="fas fa-external-link-alt"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <div class="project__item">
-          <a
-            href="project5.html"
-            class="project"
-            style="background-image: url('Images/loomina-homepage-hero.jpg')"></a>
-          <div class="project__info">
-            <div class="project__text">
-              <h4>Loomina</h4>
-              <p>Vue, TypeScript, Node, Koa, Supabase, Figma</p>
-            </div>
-            <div class="project__links">
-              <a
-                class="project__link"
-                href="https://loomina.net"
-                target="_blank"
-                ><i class="fas fa-external-link-alt"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <div class="project__item">
-          <a
-            href="project6.html"
-            class="project"
-            style="background-image: url('Images/Hovercode-cover.jpg')"></a>
-          <div class="project__info">
-            <div class="project__text">
-              <h4>HoverCode</h4>
-              <p>Vue, React, TypeScript, Python, Django, Swift, Figma</p>
-            </div>
-            <div class="project__links">
-              <a
-                href="https://hovercode.com"
-                target="_blank"
-                class="project__link"
-                ><i class="fas fa-external-link-alt"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="projects__note">
-        <p>Additional projects completed under NDA are not displayed here.</p>
-      </div>
-    </section>
-
-    <section id="contact">
-      <p class="email__footer">
-        <a href="mailto:kindred@kindredsalway.com" class="email-address">
-          kindred@kindredsalway.com <i class="fas fa-envelope"></i>
-        </a>
-      </p>
-    </section>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-    <script src="scripts.js"></script>
+      </section>
+    </main>
   </body>
 </html>

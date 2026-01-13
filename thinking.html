@@ -2,135 +2,99 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
       content="Directing potency in the face of optionality - A reflection on finding focus in an age of distraction." />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="consistent.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
       rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <title>Directing potency in the face of optionality - Kindred Salway</title>
     <style>
-      .post-container {
-        max-width: 700px;
-        margin: 0 auto;
-        padding: 120px 40px 80px;
-        color: #404040;
-        line-height: 1.8;
-      }
-
       .back-link {
-        color: #7e7e7e;
-        font-weight: 300;
-        text-decoration: none;
-        margin-bottom: 40px;
         display: inline-block;
-        transition: color 0.2s ease;
+        font-size: 14px;
+        color: #525252;
+        text-decoration: none;
+        margin-bottom: 48px;
+        transition: color 0.15s ease;
       }
-
       .back-link:hover {
-        color: #404040;
+        color: #e5e5e5;
       }
-
-      .post-header {
-        margin-bottom: 60px;
+      .post-date {
+        font-size: 13px;
+        color: #525252;
+        margin-bottom: 12px;
       }
-
-      .post-meta {
-        font-size: 16px;
-        color: #7e7e7e;
-        margin-bottom: 20px;
-        font-weight: 300;
-      }
-
       .post-title {
-        font-size: 40px;
-        font-weight: 500;
-        color: #404040;
-        margin-bottom: 30px;
-        line-height: 1.2;
+        font-size: 28px;
+        font-weight: 600;
+        letter-spacing: -0.5px;
+        line-height: 1.3;
+        margin-bottom: 40px;
+        color: #fafafa;
       }
-
       .post-content {
-        font-size: 18px;
-        line-height: 1.8;
-        color: #404040;
-        font-weight: 300;
+        font-size: 16px;
+        line-height: 1.75;
+        color: #a3a3a3;
       }
-
       .post-content p {
-        margin-bottom: 28px;
+        margin-bottom: 24px;
       }
-
       .post-content p:last-child {
         margin-bottom: 0;
       }
-
       .post-refs {
-        margin-top: 60px;
-        padding-top: 40px;
-        border-top: 1px solid #efefef;
+        margin-top: 56px;
+        padding-top: 32px;
+        border-top: 1px solid #1a1a1a;
       }
-
       .post-refs h4 {
-        font-size: 20px;
+        font-size: 11px;
         font-weight: 500;
-        color: #404040;
-        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #525252;
+        margin-bottom: 12px;
       }
-
       .post-refs ul {
         list-style: none;
-        padding: 0;
-        margin: 0;
       }
-
       .post-refs li {
-        font-size: 16px;
-        color: #7e7e7e;
-        margin-bottom: 8px;
-        font-weight: 300;
+        font-size: 14px;
+        color: #737373;
+        margin-bottom: 4px;
       }
-
       .post-footer {
-        margin-top: 40px;
-        padding-top: 40px;
-        border-top: 1px solid #efefef;
-        text-align: center;
+        margin-top: 48px;
+        padding-top: 32px;
+        border-top: 1px solid #1a1a1a;
       }
-
-      .post-footer .back-link {
-        font-size: 18px;
-        margin: 0;
-      }
-
-      @media (max-width: 800px) {
-        .post-container {
-          padding: 100px 20px 60px;
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
         }
-
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .back-link {
+        animation: fadeUp 0.5s ease-out;
+      }
+      article {
+        animation: fadeUp 0.5s ease-out 0.1s both;
+      }
+      @media (max-width: 540px) {
         .post-title {
-          font-size: 32px;
+          font-size: 24px;
         }
-
-        .post-content {
-          font-size: 16px;
-        }
-      }
-
-      @media (max-width: 480px) {
-        .post-title {
-          font-size: 26px;
-        }
-
         .post-content {
           font-size: 15px;
         }
@@ -138,114 +102,85 @@
     </style>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="navbar__container">
-        <div class="navbar__toggle" id="mobile-menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-        <ul class="navbar__menu">
-          <li class="navbar__item">
-            <a href="index.html" class="navbar__links">Home</a>
-          </li>
-          <li class="navbar__item">
-            <a href="writing.html" class="navbar__links">Writing</a>
-          </li>
-          <li class="navbar__btn">
-            <a
-              href="mailto:kindred@kindredsalway.com"
-              class="button"
-              id="signup">
-              Contact <i class="fas fa-comments"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <main>
+      <a href="writing.html" class="back-link">&larr; Back</a>
 
-    <div class="post-container">
-      <a href="writing.html" class="back-link">← Back to Writing</a>
-
-      <div class="post-header">
-        <div class="post-meta">Monday, June 30, 2025</div>
+      <article>
+        <div class="post-date">June 2025</div>
         <h1 class="post-title">Directing potency in the face of optionality</h1>
-      </div>
 
-      <div class="post-content">
-        <p>If you feel lost, write.</p>
+        <div class="post-content">
+          <p>If you feel lost, write.</p>
 
-        <p>
-          Most people mistake noise in their head for thought. If something
-          feels off in your life, you probably haven't written about it yet.
-        </p>
+          <p>
+            Most people mistake noise in their head for thought. If something
+            feels off in your life, you probably haven't written about it yet.
+          </p>
 
-        <p>
-          I learned this after six months of what I thought was freedom. Travel,
-          flexibility, no real obligations. But once I took a day to be still, I
-          saw what I'd been missing. I didn't need to escape responsibility, I
-          needed control over my attention.
-        </p>
+          <p>
+            I learned this after six months of what I thought was freedom. Travel,
+            flexibility, no real obligations. But once I took a day to be still, I
+            saw what I'd been missing. I didn't need to escape responsibility, I
+            needed control over my attention.
+          </p>
 
-        <p>
-          This distinction matters. We talk a lot about freedom, but not enough
-          about intention. The world seems to be splitting into those who write
-          (and think) and those who don't. I was close to becoming one of the
-          latter.
-        </p>
+          <p>
+            This distinction matters. We talk a lot about freedom, but not enough
+            about intention. The world seems to be splitting into those who write
+            (and think) and those who don't. I was close to becoming one of the
+            latter.
+          </p>
 
-        <p>
-          It's easy to drift into a passive state, especially when everything
-          around you is optimised for distraction. To escape that, you have to
-          act deliberately. Clear thinking isn't automatic. In fact, the more
-          capable you are, the easier it is to waste that potential chasing the
-          wrong things. Potency without clarity is dangerous.
-        </p>
+          <p>
+            It's easy to drift into a passive state, especially when everything
+            around you is optimised for distraction. To escape that, you have to
+            act deliberately. Clear thinking isn't automatic. In fact, the more
+            capable you are, the easier it is to waste that potential chasing the
+            wrong things. Potency without clarity is dangerous.
+          </p>
 
-        <p>
-          One way to get clarity is to shift mental modes from reacting to
-          reflecting. Most people operate on autopilot. But if you take time to
-          really examine what you're doing and why, you might realise you don't
-          actually want what you're chasing.
-        </p>
+          <p>
+            One way to get clarity is to shift mental modes from reacting to
+            reflecting. Most people operate on autopilot. But if you take time to
+            really examine what you're doing and why, you might realise you don't
+            actually want what you're chasing.
+          </p>
 
-        <p>
-          Trying things helps, but it often ends up akin to throwing darts
-          blindfolded if not paired with introspection. You can do anything, but
-          not everything. At some point, you have to stop and ask what's
-          actually worth doing instead of just staying busy.
-        </p>
+          <p>
+            Trying things helps, but it often ends up akin to throwing darts
+            blindfolded if not paired with introspection. You can do anything, but
+            not everything. At some point, you have to stop and ask what's
+            actually worth doing instead of just staying busy.
+          </p>
 
-        <p>
-          What surprised me wasn’t that freedom fell short, but how quietly it
-          did so. There was no crash or notable breaking point. Just a slow
-          fading of what I could only describe as purpose. The more options I
-          had, the less any of them seemed to matter. It occurred to me that
-          direction may play a bigger part than variety in feeling alive.
-        </p>
+          <p>
+            What surprised me wasn't that freedom fell short, but how quietly it
+            did so. There was no crash or notable breaking point. Just a slow
+            fading of what I could only describe as purpose. The more options I
+            had, the less any of them seemed to matter. It occurred to me that
+            direction may play a bigger part than variety in feeling alive.
+          </p>
 
-        <p>
-          Having mistaken the byproduct—happiness—for the source, I realised the
-          real question isn’t “How can I have everything?” It’s “Am I doing the
-          one thing that matters most to me right now?” That answer won’t come
-          through ephemeral deliberation. You have to write it down.
-        </p>
-      </div>
+          <p>
+            Having mistaken the byproduct—happiness—for the source, I realised the
+            real question isn't "How can I have everything?" It's "Am I doing the
+            one thing that matters most to me right now?" That answer won't come
+            through ephemeral deliberation. You have to write it down.
+          </p>
+        </div>
 
-      <div class="post-refs">
-        <h4>Refs</h4>
-        <ul>
-          <li>Paul Graham</li>
-          <li>Leslie Lamport</li>
-        </ul>
-      </div>
+        <div class="post-refs">
+          <h4>References</h4>
+          <ul>
+            <li>Paul Graham</li>
+            <li>Leslie Lamport</li>
+          </ul>
+        </div>
 
-      <div class="post-footer">
-        <a href="writing.html" class="back-link">← Back to Writing</a>
-      </div>
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-    <script src="scripts.js"></script>
+        <div class="post-footer">
+          <a href="writing.html" class="back-link">&larr; Back to Writing</a>
+        </div>
+      </article>
+    </main>
   </body>
 </html>

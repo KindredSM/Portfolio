@@ -2,204 +2,101 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Writing by Kindred Salway - Meditations on technology, creativity, and life." />
+      content="Writing by Kindred Salway" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="consistent.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
       rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <title>Writing - Kindred Salway</title>
     <style>
-      .writing-container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 120px 40px 80px;
-        color: #404040;
-        line-height: 1.7;
+      .back-link {
+        display: inline-block;
+        font-size: 14px;
+        color: #525252;
+        text-decoration: none;
+        margin-bottom: 48px;
+        transition: color 0.15s ease;
       }
-
-      .writing-header {
-        text-align: center;
-        margin-bottom: 80px;
+      .back-link:hover {
+        color: #e5e5e5;
       }
-
-      .writing-title {
-        font-size: 48px;
-        font-weight: 500;
-        color: #404040;
-        margin-bottom: 20px;
+      .posts {
+        margin-top: 8px;
       }
-
-      .writing-subtitle {
-        font-size: 20px;
-        font-weight: 300;
-        color: #7e7e7e;
-        margin-bottom: 40px;
-      }
-
-      .posts-list {
-        margin-top: 60px;
-      }
-
-      .post-item {
-        border-bottom: 1px solid #efefef;
-        padding: 40px 0;
-        transition: all 0.2s ease;
-      }
-
-      .post-item:last-child {
-        border-bottom: none;
-      }
-
-      .post-item:hover {
-        background-color: #fafafa;
-        padding: 40px 20px;
-        margin: 0 -20px;
-        border-radius: 8px;
-      }
-
-      .post-link {
+      .post {
         display: block;
+        padding: 20px 0;
+        border-bottom: 1px solid #1a1a1a;
         text-decoration: none;
         color: inherit;
-        cursor: pointer;
+        transition: opacity 0.15s ease;
       }
-
-      .post-meta {
-        font-size: 14px;
-        color: #7e7e7e;
-        margin-bottom: 15px;
-        font-weight: 300;
+      .post:last-child {
+        border-bottom: none;
       }
-
+      .post:hover {
+        opacity: 0.7;
+      }
+      .post-date {
+        font-size: 13px;
+        color: #525252;
+        margin-bottom: 6px;
+      }
       .post-title {
-        font-size: 28px;
-        text-align: left;
-        justify-content: left;
+        font-size: 17px;
         font-weight: 500;
-        color: #404040;
-        margin-bottom: 25px;
-        transition: color 0.2s ease;
+        margin-bottom: 8px;
+        color: #fafafa;
       }
-
-      .post-link:hover .post-title {
-        color: #7e7e7e;
-      }
-
       .post-excerpt {
-        font-size: 16px;
-        line-height: 1.8;
-        color: #404040;
-        font-weight: 300;
-        margin-bottom: 20px;
+        font-size: 14px;
+        color: #737373;
+        line-height: 1.5;
       }
-
-      .read-more {
-        color: #404040;
-        font-weight: 400;
-        text-decoration: none;
-        border-bottom: 2px solid #404040;
-        transition: all 0.2s ease;
-        display: inline-block;
-      }
-
-      .post-link:hover .read-more {
-        color: #7e7e7e;
-        border-bottom-color: #7e7e7e;
-      }
-
-      @media (max-width: 800px) {
-        .writing-container {
-          padding: 100px 20px 60px;
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
         }
-
-        .writing-title {
-          font-size: 36px;
-        }
-
-        .post-title {
-          font-size: 24px;
-        }
-
-        .post-excerpt {
-          font-size: 15px;
+        to {
+          opacity: 1;
+          transform: translateY(0);
         }
       }
-
-      @media (max-width: 480px) {
-        .writing-title {
-          font-size: 28px;
-        }
-
-        .post-title {
-          font-size: 24px;
-        }
+      .back-link {
+        animation: fadeUp 0.5s ease-out;
+      }
+      .hero {
+        animation: fadeUp 0.5s ease-out 0.05s both;
+      }
+      .posts {
+        animation: fadeUp 0.5s ease-out 0.1s both;
       }
     </style>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="navbar__container">
-        <div class="navbar__toggle" id="mobile-menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-        <ul class="navbar__menu">
-          <li class="navbar__item">
-            <a href="index.html" class="navbar__links">Home</a>
-          </li>
-          <li class="navbar__item">
-            <a href="writing.html" class="navbar__links">Writing</a>
-          </li>
-          <li class="navbar__btn">
-            <a
-              href="mailto:kindred@kindredsalway.com"
-              class="button"
-              id="signup">
-              Contact <i class="fas fa-comments"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <main>
+      <a href="index.html" class="back-link">&larr; Back</a>
 
-    <div class="writing-container">
-      <div class="writing-header">
-        <h1 class="writing-title">Writing</h1>
-        <p class="writing-subtitle">
-          Meditations on technology, creativity, and life
-        </p>
-      </div>
+      <header class="hero" style="margin-bottom: 48px;">
+        <h1>Writing</h1>
+        <p class="tagline">Notes on building, thinking, and life.</p>
+      </header>
 
-      <div class="posts-list">
-        <article class="post-item">
-          <a href="thinking.html" class="post-link">
-            <div class="post-meta">Monday, June 30, 2025</div>
-            <h2 class="post-title">
-              Directing potency in the face of optionality
-            </h2>
-            <div class="post-excerpt">
-              If you feel lost, write. Most people mistake noise in their head
-              for thought. If something feels off in your life, you probably
-              haven't written about it yet.
-            </div>
-            <span class="read-more">Read more →</span>
-          </a>
-        </article>
+      <div class="posts">
+        <a href="thinking.html" class="post">
+          <div class="post-date">June 2025</div>
+          <div class="post-title">Directing potency in the face of optionality</div>
+          <div class="post-excerpt">
+            If you feel lost, write. Most people mistake noise in their head for thought.
+          </div>
+        </a>
       </div>
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-    <script src="scripts.js"></script>
+    </main>
   </body>
 </html>
