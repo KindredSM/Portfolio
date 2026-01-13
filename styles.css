@@ -18,34 +18,6 @@ main {
   padding: 80px 48px 120px;
 }
 
-/* Animations */
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.hero {
-  animation: fadeUp 0.6s ease-out;
-}
-
-.section {
-  opacity: 0;
-  animation: fadeUp 0.6s ease-out forwards;
-}
-
-.section:nth-child(2) { animation-delay: 0.1s; }
-.section:nth-child(3) { animation-delay: 0.15s; }
-.section:nth-child(4) { animation-delay: 0.2s; }
-.section:nth-child(5) { animation-delay: 0.25s; }
-.section:nth-child(6) { animation-delay: 0.3s; }
-.section:nth-child(7) { animation-delay: 0.35s; }
-
 /* Hero */
 .hero {
   margin-bottom: 80px;
@@ -111,34 +83,50 @@ h2 {
 /* Card (featured item) */
 .card {
   display: block;
-  padding: 24px;
-  background: #141414;
-  border: 1px solid #262626;
+  padding: 20px 24px;
+  background: linear-gradient(135deg, #141414 0%, #0a0a0a 100%);
   border-radius: 12px;
   text-decoration: none;
   color: inherit;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
   position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  padding: 1px;
+  background: linear-gradient(135deg, #333 0%, transparent 50%, #222 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
 }
 
 .card:hover {
-  border-color: #404040;
-  background: #1a1a1a;
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover::before {
+  background: linear-gradient(135deg, #444 0%, transparent 50%, #333 100%);
 }
 
 .card-title {
   display: block;
   font-size: 17px;
-  font-weight: 500;
+  font-weight: 600;
+  letter-spacing: -0.3px;
   margin-bottom: 4px;
   color: #fafafa;
 }
 
 .card-desc {
   display: block;
-  font-size: 14px;
+  font-size: 13px;
   color: #737373;
 }
 
@@ -147,14 +135,14 @@ h2 {
   right: 24px;
   top: 50%;
   transform: translateY(-50%);
-  color: #525252;
+  color: #404040;
   font-size: 18px;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
 }
 
 .card:hover .card-arrow {
-  transform: translateY(-50%) translateX(3px);
-  color: #737373;
+  transform: translateY(-50%) translateX(4px);
+  color: #666;
 }
 
 /* List items */
