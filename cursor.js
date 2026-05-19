@@ -23,6 +23,10 @@ if (canUseCustomCursor) {
     cursor.style.transform = `translate3d(${x}px, ${y}px, 0)`;
     sessionStorage.setItem("cursor-position", JSON.stringify({ x, y }));
     document.body.classList.add("cursor-ready");
+    document.body.classList.toggle(
+      "cursor-hovering",
+      Boolean(event.target.closest("a, button"))
+    );
   };
 
   window.addEventListener("mousemove", updateCursor, { passive: true });
@@ -56,6 +60,7 @@ const replacePage = async (url, shouldPushState = true) => {
     document.head.append(style.cloneNode(true));
   });
   document.querySelector("main").replaceWith(nextMain);
+  document.body.classList.remove("cursor-hovering");
   window.scrollTo(0, 0);
 
   if (shouldPushState) {
