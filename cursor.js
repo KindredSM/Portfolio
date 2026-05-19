@@ -2,36 +2,88 @@ const canUseCustomCursor = window.innerWidth > 768;
 
 if (canUseCustomCursor) {
   const cursor = document.createElement("div");
-  const cursorDot = document.createElement("div");
+  const blob = document.createElement("div");
+  const savedPosition = sessionStorage.getItem("cursor-position");
 
-  cursor.className = "cursor-ring";
-  cursorDot.className = "cursor-dot";
-  document.body.append(cursor, cursorDot);
+  cursor.className = "cursor-dot";
+  blob.className = "cursor-blob";
+  cursor.append(blob);
+  document.body.append(cursor);
 
-  let targetX = window.innerWidth / 2;
-  let targetY = window.innerHeight / 2;
-  const moveCursor = (event) => {
-    targetX = event.clientX;
-    targetY = event.clientY;
-    cursorDot.style.transform = `translate3d(${targetX}px, ${targetY}px, 0)`;
-    cursor.style.transform = `translate3d(${targetX}px, ${targetY}px, 0)`;
+  if (savedPosition) {
+    const { x, y } = JSON.parse(savedPosition);
+    cursor.style.transform = `translate3d(${x}px, ${y}px, 0)`;
+    document.body.classList.add("cursor-ready");
+  }
+
+  const updateCursor = (event) => {
+    const x = event.clientX;
+    const y = event.clientY;
+
+    cursor.style.transform = `translate3d(${x}px, ${y}px, 0)`;
+    sessionStorage.setItem("cursor-position", JSON.stringify({ x, y }));
     document.body.classList.add("cursor-ready");
   };
 
-  const setHoverState = (isHovering) => {
-    document.body.classList.toggle("cursor-hovering", isHovering);
-  };
+  window.addEventListener("mousemove", updateCursor, { passive: true });
+  window.addEventListener("pointerdown", updateCursor, { passive: true });
 
-  window.addEventListener("mousemove", moveCursor, { passive: true });
   window.addEventListener("mouseleave", () => {
     document.body.classList.remove("cursor-ready");
   });
+
   window.addEventListener("mouseenter", () => {
     document.body.classList.add("cursor-ready");
   });
-
-  document.querySelectorAll("a, button").forEach((element) => {
-    element.addEventListener("mouseenter", () => setHoverState(true));
-    element.addEventListener("mouseleave", () => setHoverState(false));
-  });
 }
+
+const replacePage = async (url, shouldPushState = true) => {
+  const response = await fetch(url);
+  const html = await response.text();
+  const nextDocument = new DOMParser().parseFromString(html, "text/html");
+  const nextMain = nextDocument.querySelector("main");
+
+  if (!nextMain) {
+    window.location.href = url;
+    return;
+  }
+
+  document.title = nextDocument.title;
+  document.querySelectorAll("[data-page-style]").forEach((style) => {
+    style.remove();
+  });
+  nextDocument.querySelectorAll("[data-page-style]").forEach((style) => {
+    document.head.append(style.cloneNode(true));
+  });
+  document.querySelector("main").replaceWith(nextMain);
+  window.scrollTo(0, 0);
+
+  if (shouldPushState) {
+    window.history.pushState({}, "", url);
+  }
+};
+
+document.addEventListener("click", (event) => {
+  const link = event.target.closest("a");
+
+  if (
+    !link ||
+    link.target ||
+    link.hasAttribute("download") ||
+    link.origin !== window.location.origin ||
+    link.pathname === window.location.pathname
+  ) {
+    return;
+  }
+
+  event.preventDefault();
+  replacePage(link.href).catch(() => {
+    window.location.href = link.href;
+  });
+});
+
+window.addEventListener("popstate", () => {
+  replacePage(window.location.href, false).catch(() => {
+    window.location.reload();
+  });
+});
