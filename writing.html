@@ -6,86 +6,38 @@
     <meta
       name="description"
       content="Writing by Kindred Salway" />
-    <style>
-      @media (min-width: 769px) {
-        html,
-        body,
-        a,
-        button {
-          cursor: none !important;
-        }
-      }
-    </style>
-    <link rel="stylesheet" href="styles.css" />
+    <meta name="theme-color" content="#080808" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='7' fill='%23f2f2f2'/%3E%3C/svg%3E" />
+    <script>document.documentElement.classList.add("js");</script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500&display=swap"
       rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Writing - Kindred Salway</title>
-    <style data-page-style>
-      .posts {
-        margin-top: 10px;
-      }
-      .post {
-        display: block;
-        padding: 22px 0;
-        border-bottom: 1px solid var(--rule);
-        text-decoration: none;
-        color: inherit;
-        transition: color 0.2s ease, padding-left 0.2s ease;
-      }
-      .post:last-child {
-        border-bottom: none;
-      }
-      .post:hover {
-        color: var(--cyan);
-        padding-left: 10px;
-      }
-      .post-date {
-        font-family: var(--sans);
-        font-size: 13px;
-        color: var(--muted);
-        font-weight: 700;
-        letter-spacing: 0.08em;
-        margin-bottom: 6px;
-        text-transform: uppercase;
-      }
-      .post-title {
-        font-family: var(--sans);
-        font-size: 22px;
-        font-weight: 400;
-        letter-spacing: 0;
-        margin-bottom: 8px;
-        color: var(--ink);
-      }
-      .post-excerpt {
-        max-width: 640px;
-        font-size: 16px;
-        color: var(--soft-ink);
-        line-height: 1.55;
-      }
-    </style>
   </head>
   <body>
     <main>
-      <a href="index.html" class="back-link">&larr; Back</a>
+      <div class="page">
+        <a href="index.html" class="back" data-reveal>&larr; Back</a>
 
-      <header class="hero" style="margin-bottom: 48px;">
-        <h1>Writing</h1>
-        <p class="tagline">Notes on building, thinking, and living.</p>
-      </header>
+        <header class="page-head" data-reveal style="--i: 1">
+          <h1 class="page-title">Writing</h1>
+          <p class="sub">Notes on building, thinking, and living.</p>
+        </header>
 
-      <div class="posts">
-        <a href="thinking.html" class="post">
-          <div class="post-date">June 2025</div>
-          <div class="post-title">Directing potency in the face of optionality</div>
-          <div class="post-excerpt">
-            If you feel lost, write. Most people mistake noise in their head for thought.
-          </div>
-        </a>
+        <div class="posts" data-reveal style="--i: 2">
+          <a href="thinking.html" class="post">
+            <span class="post-top">
+              <span class="post-title">Directing potency in the face of optionality</span>
+              <time datetime="2025-06">June 2025</time>
+            </span>
+            <span class="post-excerpt">If you feel lost, write. Most people mistake noise in their head for thought.</span>
+          </a>
+        </div>
       </div>
     </main>
-    <script src="cursor.js"></script>
+    <script src="site.js"></script>
   </body>
 </html>
