@@ -73,7 +73,10 @@ if (finePointer && !reducedMotion) {
 
     // Squash and stretch along the direction of travel, only as a dot
     const speed = Math.hypot(vx, vy);
-    stretch = lerp(stretch, hovered ? 0 : Math.min(speed / 40, 0.9), 0.3);
+    // Only stretch once the box has shrunk back to a dot, otherwise a
+    // wide box gets skewed on its way off a link
+    const dotness = Math.max(0, 1 - (Math.max(box.w, box.h) - DOT) / 12);
+    stretch = lerp(stretch, hovered ? 0 : Math.min(speed / 40, 0.9) * dotness, 0.3);
     if (speed > 0.5 && !hovered) angle = Math.atan2(vy, vx);
     const sx = (1 + stretch) * (1 - pressed * 0.15);
     const sy = (1 / Math.sqrt(1 + stretch)) * (1 - pressed * 0.15);
