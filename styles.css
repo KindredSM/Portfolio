@@ -170,11 +170,17 @@ main.is-leaving {
   transform: translateX(3px);
 }
 
-/* Drawn as SVG: the unicode arrow turns into an emoji on iOS */
-.arrow-ne {
-  width: 0.72em;
-  height: 0.72em;
-  vertical-align: -0.02em;
+/* All arrows are the same SVG, rotated. Unicode arrows vary by font
+   and turn into emoji on iOS */
+svg.arrow {
+  width: 0.75em;
+  height: 0.75em;
+  vertical-align: -0.04em;
+}
+
+.back:hover .arrow-back {
+  color: var(--ink);
+  transform: translateX(-3px);
 }
 
 .item:hover .arrow-ne {
